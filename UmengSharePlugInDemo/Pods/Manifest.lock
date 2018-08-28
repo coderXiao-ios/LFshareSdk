@@ -1,0 +1,48 @@
+PODS:
+  - Reveal-SDK (6)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - UMengUShare/Core (6.4.8.2):
+    - UMengUShare/Network
+  - UMengUShare/Network (6.4.8.2)
+  - UMengUShare/Social/QQ (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedQQ
+  - UMengUShare/Social/ReducedQQ (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedSina (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/ReducedWeChat (6.4.8.2):
+    - UMengUShare/Core
+  - UMengUShare/Social/Sina (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedSina
+  - UMengUShare/Social/WeChat (6.4.8.2):
+    - UMengUShare/Core
+    - UMengUShare/Social/ReducedWeChat
+  - UMengUShare/UI (6.4.8.2):
+    - UMengUShare/Core
+
+DEPENDENCIES:
+  - Reveal-SDK (= 6)
+  - SDWebImage (~> 3.8)
+  - UMengUShare/Social/QQ (~> 6.4.8.2)
+  - UMengUShare/Social/Sina (~> 6.4.8.2)
+  - UMengUShare/Social/WeChat (~> 6.4.8.2)
+  - UMengUShare/UI (~> 6.4.8.2)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Reveal-SDK
+    - SDWebImage
+    - UMengUShare
+
+SPEC CHECKSUMS:
+  Reveal-SDK: 67460e58f93711c7b18631d12c2b5de7740e48b5
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
+
+PODFILE CHECKSUM: 843c6f7c5f40feb923a75cd7422e856174bb3694
+
+COCOAPODS: 1.5.3
