@@ -7,7 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "LFShareModel.h"
+#import "LFShareConst.h"
+typedef enum : NSUInteger {
+    LFSharePlatFormQQ,
+    LFSharePlatFormQQZone,
+    LFSharePlatFormWX,
+    LFSharePlatFormSina
+} LFSharePlatForm;
+
+typedef enum : NSUInteger {
+    LFShareContentTypeVedio,
+    LFShareContentTypeImage,
+    LFShareContentTypeContent,
+    LFShareContentTypeLink
+} LFShareContentType;
 
 @interface LFShareLogInManager : NSObject
-
+HFSingletonH
 @end

@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LFShareManager.h"
+#import "LFShareLogInManager.h"
 @interface ViewController ()
 
 @end
@@ -29,7 +30,12 @@
 }
 
 - (IBAction)LogInAction:(UIButton *)sender {
+    
 }
+
+- (IBAction)logOutAction:(UIButton *)sender {
+}
+
 
 
 @end

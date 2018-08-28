@@ -7,11 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-typedef enum : NSUInteger {
-    LFSharePlatFormQQ,
-    LFSharePlatFormWX,
-    LFSharePlatFormSina
-} LFSharePlatForm;
+
 @interface LFShareModel : NSObject
 /** 分享标题 */
 @property (nonatomic, copy) NSString *title;

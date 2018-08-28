@@ -22,4 +22,31 @@ static NSString *const LFSinaAppSecret = @"a3a4f41b7fea03f6b39f3f5ff99e41d4";
 #define isDebug NO
 #endif
 
+//.h文件
+#define HFSingletonH  + (nullable instancetype)sharedInstance;
+#define HFSingletonM \
+static id _instance;\
+\
++ (nullable instancetype)allocWithZone:(struct _NSZone *)zone\
+{\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+_instance = [super allocWithZone:zone];\
+});\
+return _instance;\
+}\
+\
++ (instancetype)sharedInstance\
+{\
+static dispatch_once_t onceToken;\
+dispatch_once(&onceToken, ^{\
+_instance = [[self alloc]init];\
+});\
+return _instance;\
+}\
+\
+- (id)copyWithZone:(NSZone *)zone\
+{\
+return _instance;\
+}
 #endif /* LFShareConst_h */
