@@ -28,7 +28,7 @@ static NSString *const LFQQAppkey = @"1105737761";
 static NSString *const LFQQAppSecret = @"I8PHlY7HkoczzI1E";
 static NSString *const LFSinaAppkey = @"UMSinaAppID";
 static NSString *const LFSinaAppSecret = @"50992bec1bcce331172eadc5960255b1";
-static NSString *const LFShareRedirectURL = @"http://mobile.umeng.com/social";
+static NSString *const LFShareRedirectURL = @"http://www.hefantv.com";
 
 static NSString *const LFSinaURLScheme = @"wb1412448931";
 static NSString *const LFWXURLScheme = @"wxaacd80f5db150672";

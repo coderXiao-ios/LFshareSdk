@@ -222,7 +222,6 @@
 		007D74F921368F0200D3C874 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				006772E12133E5D40062C438 /* LFShareConst.h */,
 				007D74EF21364E7200D3C874 /* UIImage+Tailoring.h */,
 				007D74F021364E7200D3C874 /* UIImage+Tailoring.m */,
 				007D74FA21368F5200D3C874 /* UIButton+ImageTitleSpacing.h */,
@@ -236,6 +235,7 @@
 			children = (
 				006772BD2133E0A80062C438 /* LFShareAndLogInManager.h */,
 				006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */,
+				006772E12133E5D40062C438 /* LFShareConst.h */,
 				007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */,
 				007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */,
 				007D74E921364B2D00D3C874 /* LFWXApiPlugIn.h */,
