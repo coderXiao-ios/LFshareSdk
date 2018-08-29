@@ -26,7 +26,7 @@
     model.content = @"测试一下分享";
     model.title = @"标题测试";
     model.webpageUrl =@"www.baidu.com";
-    [LFShareManager showUMShareView:model];
+//    [LFShareManager showUMShareView:model];
 }
 
 - (IBAction)LogInAction:(UIButton *)sender {

@@ -24,6 +24,10 @@
 		006772C22133E0BD0062C438 /* LFShareLogInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772C12133E0BD0062C438 /* LFShareLogInManager.m */; };
 		006772C62133E0D40062C438 /* LFShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772C52133E0D40062C438 /* LFShareModel.m */; };
 		006772E02133E4AC0062C438 /* LFShareKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772DF2133E4AC0062C438 /* LFShareKeyModel.m */; };
+		007D74E821364B1E00D3C874 /* LFQQApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */; };
+		007D74EB21364B2D00D3C874 /* LFWXApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74EA21364B2D00D3C874 /* LFWXApiPlugIn.m */; };
+		007D74EE21364B3600D3C874 /* LFWBApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */; };
+		007D74F121364E7200D3C874 /* UIImage+Tailoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74F021364E7200D3C874 /* UIImage+Tailoring.m */; };
 		92F6F6B0CCF1A90D556DED89 /* libPods-UmengSharePlugInDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C106FAF9C90EBB2C9DBB16A1 /* libPods-UmengSharePlugInDemoTests.a */; };
 		D3B96FF2A3F1588DF4F4C054 /* libPods-UmengSharePlugInDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058A3E11E9D2A4D43CF7D8A3 /* libPods-UmengSharePlugInDemo.a */; };
 		F11D49D7E6B503B364D9DF0B /* libPods-UmengSharePlugInDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F7840EF2DC818519DE158D /* libPods-UmengSharePlugInDemoUITests.a */; };
@@ -77,6 +81,14 @@
 		006772DE2133E4AC0062C438 /* LFShareKeyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareKeyModel.h; sourceTree = "<group>"; };
 		006772DF2133E4AC0062C438 /* LFShareKeyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareKeyModel.m; sourceTree = "<group>"; };
 		006772E12133E5D40062C438 /* LFShareConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareConst.h; sourceTree = "<group>"; };
+		007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFQQApiPlugIn.h; sourceTree = "<group>"; };
+		007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFQQApiPlugIn.m; sourceTree = "<group>"; };
+		007D74E921364B2D00D3C874 /* LFWXApiPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFWXApiPlugIn.h; sourceTree = "<group>"; };
+		007D74EA21364B2D00D3C874 /* LFWXApiPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFWXApiPlugIn.m; sourceTree = "<group>"; };
+		007D74EC21364B3600D3C874 /* LFWBApiPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFWBApiPlugIn.h; sourceTree = "<group>"; };
+		007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFWBApiPlugIn.m; sourceTree = "<group>"; };
+		007D74EF21364E7200D3C874 /* UIImage+Tailoring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tailoring.h"; sourceTree = "<group>"; };
+		007D74F021364E7200D3C874 /* UIImage+Tailoring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tailoring.m"; sourceTree = "<group>"; };
 		058A3E11E9D2A4D43CF7D8A3 /* libPods-UmengSharePlugInDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UmengSharePlugInDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F7840EF2DC818519DE158D /* libPods-UmengSharePlugInDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UmengSharePlugInDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A26BDC1581CD405142F92A /* Pods-UmengSharePlugInDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmengSharePlugInDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UmengSharePlugInDemoUITests/Pods-UmengSharePlugInDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -186,7 +198,15 @@
 				006772BE2133E0A80062C438 /* LFShareManager.m */,
 				006772C02133E0BD0062C438 /* LFShareLogInManager.h */,
 				006772C12133E0BD0062C438 /* LFShareLogInManager.m */,
+				007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */,
+				007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */,
+				007D74E921364B2D00D3C874 /* LFWXApiPlugIn.h */,
+				007D74EA21364B2D00D3C874 /* LFWXApiPlugIn.m */,
+				007D74EC21364B3600D3C874 /* LFWBApiPlugIn.h */,
+				007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */,
 				006772E12133E5D40062C438 /* LFShareConst.h */,
+				007D74EF21364E7200D3C874 /* UIImage+Tailoring.h */,
+				007D74F021364E7200D3C874 /* UIImage+Tailoring.m */,
 			);
 			path = UmengSharePlugIn;
 			sourceTree = "<group>";
@@ -242,7 +262,6 @@
 				0067727A2133DFD90062C438 /* Frameworks */,
 				0067727B2133DFD90062C438 /* Resources */,
 				10A948AEC118A6947677C3D7 /* [CP] Copy Pods Resources */,
-				F65A3D2A9AEAFDE53111FA6E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -389,14 +408,12 @@
 				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialSDK/UMSocialSDKPromptResources.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK/TencentOpenApi_IOS_Bundle.bundle",
 				"${PODS_ROOT}/UMengUShare/UShareSDK/SocialLibraries/Sina/SinaSDK/WeiboSDK.bundle",
-				"${PODS_ROOT}/UMengUShare/UShareSDK/UMSocialUI/UMSocialSDKResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKPromptResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TencentOpenApi_IOS_Bundle.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/UMSocialSDKResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -439,24 +456,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F65A3D2A9AEAFDE53111FA6E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-UmengSharePlugInDemo/Pods-UmengSharePlugInDemo-frameworks.sh",
-				"${PODS_ROOT}/Reveal-SDK/RevealServer-6/iOS/RevealServer.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealServer.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UmengSharePlugInDemo/Pods-UmengSharePlugInDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -465,12 +464,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				006772C22133E0BD0062C438 /* LFShareLogInManager.m in Sources */,
+				007D74EB21364B2D00D3C874 /* LFWXApiPlugIn.m in Sources */,
 				006772852133DFD90062C438 /* ViewController.m in Sources */,
 				006772902133DFDA0062C438 /* main.m in Sources */,
+				007D74F121364E7200D3C874 /* UIImage+Tailoring.m in Sources */,
 				006772C62133E0D40062C438 /* LFShareModel.m in Sources */,
 				006772822133DFD90062C438 /* AppDelegate.m in Sources */,
+				007D74EE21364B3600D3C874 /* LFWBApiPlugIn.m in Sources */,
 				006772E02133E4AC0062C438 /* LFShareKeyModel.m in Sources */,
 				006772BF2133E0A80062C438 /* LFShareManager.m in Sources */,
+				007D74E821364B1E00D3C874 /* LFQQApiPlugIn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

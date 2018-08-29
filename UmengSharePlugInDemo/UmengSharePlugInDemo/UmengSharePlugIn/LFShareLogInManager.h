@@ -25,4 +25,5 @@ typedef enum : NSUInteger {
 
 @interface LFShareLogInManager : NSObject
 HFSingletonH
+- (void) refgisterPlatForm;
 @end

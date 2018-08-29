@@ -7,11 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UShareUI/UShareUI.h>
 #import "LFShareModel.h"
 
 @interface LFShareManager : NSObject
-+ (void)configUmengShareSettings;
+//+ (void)configUmengShareSettings;
 
-+ (void)showUMShareView:(LFShareModel *)model ;
 @end

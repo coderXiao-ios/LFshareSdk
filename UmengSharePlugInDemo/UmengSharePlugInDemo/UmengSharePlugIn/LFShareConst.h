@@ -9,13 +9,30 @@
 #ifndef LFShareConst_h
 #define LFShareConst_h
 
+
+//QQ
+#define UMQQAppID @"1105737761"
+#define UMQQAppSecret @"I8PHlY7HkoczzI1E"
+//微信
+#define UMWeChatAppID @"wxaacd80f5db150672"
+#define UMWeChatAppSecret @"936d790fc336cc6ca868f082b87b7df7"
+//微博
+#define UMSinaAppID @"1412448931"
+#define UMSinaAppSecret @"50992bec1bcce331172eadc5960255b1"
+
 static NSString *const LFUMengAppkey = @"5861e5daf5ade41326001eab";
-static NSString *const LFWXAppkey = @"wx102ed6c47738d38a";
-static NSString *const LFWXAppSecret = @"a3a4f41b7fea03f6b39f3f5ff99e41d4";
-static NSString *const LFQQAppkey = @"1105405763";
-static NSString *const LFUMengRedirectURL = @"http://mobile.umeng.com/social";
-static NSString *const LFSinaAppkey = @"wx102ed6c47738d38a";
-static NSString *const LFSinaAppSecret = @"a3a4f41b7fea03f6b39f3f5ff99e41d4";
+
+static NSString *const LFWXAppkey = @"wxaacd80f5db150672";
+static NSString *const LFWXAppSecret = @"936d790fc336cc6ca868f082b87b7df7";
+static NSString *const LFQQAppkey = @"1105737761";
+static NSString *const LFQQAppSecret = @"I8PHlY7HkoczzI1E";
+static NSString *const LFSinaAppkey = @"UMSinaAppID";
+static NSString *const LFSinaAppSecret = @"50992bec1bcce331172eadc5960255b1";
+static NSString *const LFShareRedirectURL = @"http://mobile.umeng.com/social";
+
+static NSString *const LFSinaURLScheme = @"wb1412448931";
+static NSString *const LFWXURLscheme = @"wxaacd80f5db150672";
+static NSString *const LFQQURLscheme = @"QQ41e83821";
 #ifdef DEBUG
 #define isDebug YES
 #else

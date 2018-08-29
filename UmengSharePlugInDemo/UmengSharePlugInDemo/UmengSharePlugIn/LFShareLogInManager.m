@@ -11,17 +11,38 @@
 #import <TencentOpenAPI/QQApiInterfaceObject.h>
 #import <TencentOpenAPI/QQApiInterface.h>
 #import <WeiboSDK.h>
-@interface LFShareLogInManager()<TencentSessionDelegate>
+#import <WXApiObject.h>
+#import <WXApi.h>
+@interface LFShareLogInManager()<TencentSessionDelegate,WXApiDelegate>
 @property(strong, nonatomic)TencentOAuth *oauth;
 @end
 @implementation LFShareLogInManager
 HFSingletonM
+- (void) refgisterPlatForm{
+    _oauth = [[TencentOAuth alloc] initWithAppId:LFQQAppkey andDelegate:self];
+    NSArray *permissions = @[kOPEN_PERMISSION_GET_SIMPLE_USER_INFO, kOPEN_PERMISSION_ADD_SHARE, kOPEN_PERMISSION_GET_INFO, kOPEN_PERMISSION_GET_USER_INFO];
+    [_oauth authorize:permissions];
+    
+    [WeiboSDK registerApp:LFSinaAppkey];
+ 
+    [WXApi registerApp:LFWXAppkey];
+}
+- (void) handlOpenURl:(NSURL *)url {
+    if ([LFWXURLscheme isEqualToString:[url scheme]]) {
+        [WXApi handleOpenURL:url delegate:self];
+    }
+}
 - (void) logInWithPlatForm:(LFSharePlatForm)platform{
     switch (platform) {
         case LFSharePlatFormQQ:{
-            _oauth = [[TencentOAuth alloc] initWithAppId:@"1106248070" andDelegate:self];
-            NSArray *permissions = @[kOPEN_PERMISSION_GET_SIMPLE_USER_INFO, kOPEN_PERMISSION_ADD_SHARE, kOPEN_PERMISSION_GET_INFO, kOPEN_PERMISSION_GET_USER_INFO];
-            [_oauth authorize:permissions];
+           
+        }
+            break;
+        case LFSharePlatFormWX:{
+        }
+            break;
+        case LFSharePlatFormSina:{
+
         }
             break;
             
@@ -67,17 +88,11 @@ HFSingletonM
     NSLog(@"userInfo： response %@",response.jsonResponse);
 }
 
-/**
- * 分享到QZone回调
- * \param response API返回结果，具体定义参见sdkdef.h文件中\ref APIResponse
- * \remarks 正确返回示例: \snippet example/addShareResponse.exp success
- *          错误返回示例: \snippet example/addShareResponse.exp fail
- */
 - (void)addShareResponse:(APIResponse*) response {
     NSLog(@"%@",response);
 }
 
 
-#pragma mark getter/setter
+#pragma mark
 
 @end
