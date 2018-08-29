@@ -22,11 +22,12 @@
 		006772BB2133E05C0062C438 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006772B62133E05C0062C438 /* SystemConfiguration.framework */; };
 		006772BF2133E0A80062C438 /* LFShareAndLogInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */; };
 		006772C62133E0D40062C438 /* LFShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772C52133E0D40062C438 /* LFShareModel.m */; };
-		006772E02133E4AC0062C438 /* LFShareKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772DF2133E4AC0062C438 /* LFShareKeyModel.m */; };
 		007D74E821364B1E00D3C874 /* LFQQApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */; };
 		007D74EB21364B2D00D3C874 /* LFWXApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74EA21364B2D00D3C874 /* LFWXApiPlugIn.m */; };
 		007D74EE21364B3600D3C874 /* LFWBApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */; };
 		007D74F121364E7200D3C874 /* UIImage+Tailoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74F021364E7200D3C874 /* UIImage+Tailoring.m */; };
+		007D74F821368A2A00D3C874 /* LFSharePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74F721368A2A00D3C874 /* LFSharePopView.m */; };
+		007D74FC21368F5200D3C874 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74FB21368F5200D3C874 /* UIButton+ImageTitleSpacing.m */; };
 		92F6F6B0CCF1A90D556DED89 /* libPods-UmengSharePlugInDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C106FAF9C90EBB2C9DBB16A1 /* libPods-UmengSharePlugInDemoTests.a */; };
 		D3B96FF2A3F1588DF4F4C054 /* libPods-UmengSharePlugInDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 058A3E11E9D2A4D43CF7D8A3 /* libPods-UmengSharePlugInDemo.a */; };
 		F11D49D7E6B503B364D9DF0B /* libPods-UmengSharePlugInDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 22F7840EF2DC818519DE158D /* libPods-UmengSharePlugInDemoUITests.a */; };
@@ -75,8 +76,6 @@
 		006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareAndLogInManager.m; sourceTree = "<group>"; };
 		006772C42133E0D40062C438 /* LFShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareModel.h; sourceTree = "<group>"; };
 		006772C52133E0D40062C438 /* LFShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareModel.m; sourceTree = "<group>"; };
-		006772DE2133E4AC0062C438 /* LFShareKeyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareKeyModel.h; sourceTree = "<group>"; };
-		006772DF2133E4AC0062C438 /* LFShareKeyModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareKeyModel.m; sourceTree = "<group>"; };
 		006772E12133E5D40062C438 /* LFShareConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareConst.h; sourceTree = "<group>"; };
 		007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFQQApiPlugIn.h; sourceTree = "<group>"; };
 		007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFQQApiPlugIn.m; sourceTree = "<group>"; };
@@ -86,6 +85,10 @@
 		007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFWBApiPlugIn.m; sourceTree = "<group>"; };
 		007D74EF21364E7200D3C874 /* UIImage+Tailoring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Tailoring.h"; sourceTree = "<group>"; };
 		007D74F021364E7200D3C874 /* UIImage+Tailoring.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Tailoring.m"; sourceTree = "<group>"; };
+		007D74F621368A2A00D3C874 /* LFSharePopView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSharePopView.h; sourceTree = "<group>"; };
+		007D74F721368A2A00D3C874 /* LFSharePopView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSharePopView.m; sourceTree = "<group>"; };
+		007D74FA21368F5200D3C874 /* UIButton+ImageTitleSpacing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ImageTitleSpacing.h"; sourceTree = "<group>"; };
+		007D74FB21368F5200D3C874 /* UIButton+ImageTitleSpacing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ImageTitleSpacing.m"; sourceTree = "<group>"; };
 		058A3E11E9D2A4D43CF7D8A3 /* libPods-UmengSharePlugInDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UmengSharePlugInDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22F7840EF2DC818519DE158D /* libPods-UmengSharePlugInDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UmengSharePlugInDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A26BDC1581CD405142F92A /* Pods-UmengSharePlugInDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UmengSharePlugInDemoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UmengSharePlugInDemoUITests/Pods-UmengSharePlugInDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -190,18 +193,10 @@
 		006772BC2133E07E0062C438 /* UmengSharePlugIn */ = {
 			isa = PBXGroup;
 			children = (
+				007D74FD21368F6E00D3C874 /* plugIn */,
+				007D74F921368F0200D3C874 /* tool */,
+				007D74F22136872900D3C874 /* view */,
 				006772C32133E0C50062C438 /* model */,
-				006772BD2133E0A80062C438 /* LFShareAndLogInManager.h */,
-				006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */,
-				007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */,
-				007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */,
-				007D74E921364B2D00D3C874 /* LFWXApiPlugIn.h */,
-				007D74EA21364B2D00D3C874 /* LFWXApiPlugIn.m */,
-				007D74EC21364B3600D3C874 /* LFWBApiPlugIn.h */,
-				007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */,
-				006772E12133E5D40062C438 /* LFShareConst.h */,
-				007D74EF21364E7200D3C874 /* UIImage+Tailoring.h */,
-				007D74F021364E7200D3C874 /* UIImage+Tailoring.m */,
 			);
 			path = UmengSharePlugIn;
 			sourceTree = "<group>";
@@ -211,10 +206,44 @@
 			children = (
 				006772C42133E0D40062C438 /* LFShareModel.h */,
 				006772C52133E0D40062C438 /* LFShareModel.m */,
-				006772DE2133E4AC0062C438 /* LFShareKeyModel.h */,
-				006772DF2133E4AC0062C438 /* LFShareKeyModel.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		007D74F22136872900D3C874 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				007D74F621368A2A00D3C874 /* LFSharePopView.h */,
+				007D74F721368A2A00D3C874 /* LFSharePopView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		007D74F921368F0200D3C874 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				006772E12133E5D40062C438 /* LFShareConst.h */,
+				007D74EF21364E7200D3C874 /* UIImage+Tailoring.h */,
+				007D74F021364E7200D3C874 /* UIImage+Tailoring.m */,
+				007D74FA21368F5200D3C874 /* UIButton+ImageTitleSpacing.h */,
+				007D74FB21368F5200D3C874 /* UIButton+ImageTitleSpacing.m */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
+		007D74FD21368F6E00D3C874 /* plugIn */ = {
+			isa = PBXGroup;
+			children = (
+				006772BD2133E0A80062C438 /* LFShareAndLogInManager.h */,
+				006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */,
+				007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */,
+				007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */,
+				007D74E921364B2D00D3C874 /* LFWXApiPlugIn.h */,
+				007D74EA21364B2D00D3C874 /* LFWXApiPlugIn.m */,
+				007D74EC21364B3600D3C874 /* LFWBApiPlugIn.h */,
+				007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */,
+			);
+			path = plugIn;
 			sourceTree = "<group>";
 		};
 		4E322F95CF41A425481915C8 /* Frameworks */ = {
@@ -458,14 +487,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007D74FC21368F5200D3C874 /* UIButton+ImageTitleSpacing.m in Sources */,
 				007D74EB21364B2D00D3C874 /* LFWXApiPlugIn.m in Sources */,
 				006772852133DFD90062C438 /* ViewController.m in Sources */,
 				006772902133DFDA0062C438 /* main.m in Sources */,
 				007D74F121364E7200D3C874 /* UIImage+Tailoring.m in Sources */,
+				007D74F821368A2A00D3C874 /* LFSharePopView.m in Sources */,
 				006772C62133E0D40062C438 /* LFShareModel.m in Sources */,
 				006772822133DFD90062C438 /* AppDelegate.m in Sources */,
 				007D74EE21364B3600D3C874 /* LFWBApiPlugIn.m in Sources */,
-				006772E02133E4AC0062C438 /* LFShareKeyModel.m in Sources */,
 				006772BF2133E0A80062C438 /* LFShareAndLogInManager.m in Sources */,
 				007D74E821364B1E00D3C874 /* LFQQApiPlugIn.m in Sources */,
 			);
@@ -640,6 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G92V3TDEL2;
 				INFOPLIST_FILE = UmengSharePlugInDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -658,6 +689,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = G92V3TDEL2;
 				INFOPLIST_FILE = UmengSharePlugInDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

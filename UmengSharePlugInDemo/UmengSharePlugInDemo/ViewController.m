@@ -29,6 +29,19 @@
 }
 
 - (IBAction)LogInAction:(UIButton *)sender {
+    switch (sender.tag) {
+        case 100:
+            [[LFShareAndLogInManager sharedInstance].qqPlugIn QQOauthLogin];
+            break;
+        case 101:
+            [[LFShareAndLogInManager sharedInstance].wxPlugIn WXOauthLogin];
+            break;
+        case 102:
+            [[LFShareAndLogInManager sharedInstance].wxPlugIn WXOauthLogin];
+            break;
+        default:
+            break;
+    }
     
 }
 

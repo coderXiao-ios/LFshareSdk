@@ -27,8 +27,6 @@
 @property(strong,nonatomic)LFWBApiPlugIn * wbPlugIn;
 + (LFShareAndLogInManager *)sharedInstance;
 #pragma mark- AppDelegate方法处理
--(void)thirdPlatFormApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
-- (BOOL)thirdPlatFormApplicationOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
-- (BOOL)thirdPlatFormApplicationHandleOpenURL:(NSURL *)url;
+-(void)registerThirdPlatform;
 - (BOOL)thirdPlatformApplication:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options;
 @end

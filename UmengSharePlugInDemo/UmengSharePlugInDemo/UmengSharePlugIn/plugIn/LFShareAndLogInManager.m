@@ -12,7 +12,7 @@
 @end
 @implementation LFShareAndLogInManager
 /**
- 创建单例
+ * 创建单例
  */
 + (LFShareAndLogInManager *)sharedInstance
 {
@@ -24,51 +24,13 @@
     return sharedInstance;
 }
 #pragma mark- AppDelegate方法处理
--(void)thirdPlatFormApplication:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+-(void)registerThirdPlatform{
     //微信注册
     [self.wxPlugIn WXRegister];
     //微博注册
     [self.wbPlugIn WBRegister:YES];
 }
-- (BOOL)thirdPlatFormApplicationOpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation{
-    if ([LFTencentURLScheme isEqualToString:[url scheme]]) {
-        //QQ
-        return [TencentOAuth HandleOpenURL:url];
-        
-    }else if ([LFQQURLScheme isEqualToString:[url scheme]]) {
-        //QQ
-        return [QQApiInterface handleOpenURL:url delegate:self.qqPlugIn];
-        
-    }else if ([LFWXURLScheme isEqualToString:[url scheme]]) {
-        //微信
-        return [WXApi handleOpenURL:url delegate:self.wxPlugIn];
-        
-    }else if ([LFSinaURLScheme isEqualToString:[url scheme]]){
-        //微博
-        return [WeiboSDK handleOpenURL:url delegate:self.wbPlugIn];
-    }
-    return NO;
-}
-- (BOOL)thirdPlatFormApplicationHandleOpenURL:(NSURL *)url {
-    
-    if ([LFTencentURLScheme isEqualToString:[url scheme]]) {
-        //QQ
-        return [TencentOAuth HandleOpenURL:url];
-        
-    }else if ([LFQQURLScheme isEqualToString:[url scheme]]) {
-        //QQ
-        return [QQApiInterface handleOpenURL:url delegate:self.qqPlugIn];
-        
-    }else if ([LFWXURLScheme isEqualToString:[url scheme]]) {
-        //微信
-        return [WXApi handleOpenURL:url delegate:self.wxPlugIn];
-        
-    }else if ([LFSinaURLScheme isEqualToString:[url scheme]]){
-        //微博
-        return [WeiboSDK handleOpenURL:url delegate:self.wbPlugIn];
-    }
-    return NO;
-}
+
 - (BOOL)thirdPlatformApplication:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options{
     if ([LFTencentURLScheme isEqualToString:[url scheme]]) {
         //QQ
@@ -140,7 +102,7 @@
             typeof(self) __weak weakSelf = self;
             dispatch_async(dispatch_get_main_queue(), ^{
                 if (data) {
-                    typeof(weakSelf) __strong strongSelf = self;
+                    typeof(weakSelf) __strong strongSelf = weakSelf;
                     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
                     //获取到的三方凭证
                     NSString * access_token = dic[@"access_token"];

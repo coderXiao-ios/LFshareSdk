@@ -17,9 +17,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    [LFShareManager configUmengShareSettings];
+    [[LFShareAndLogInManager sharedInstance]registerThirdPlatform];
     return YES;
 }
+
+#pragma mark --------------------三方登录分享相关---------------------------------
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options{
+    return [[LFShareAndLogInManager sharedInstance] thirdPlatformApplication:app openURL:url options:options];
+}
+
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
