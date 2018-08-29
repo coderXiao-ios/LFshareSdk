@@ -7,8 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "LFShareManager.h"
-#import "LFShareLogInManager.h"
+#import "LFShareAndLogInManager.h"
 @interface ViewController ()
 
 @end

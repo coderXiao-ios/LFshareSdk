@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "LFShareManager.h"
+#import "LFShareAndLogInManager.h"
 @interface AppDelegate ()
 
 @end

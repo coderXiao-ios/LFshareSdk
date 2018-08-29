@@ -6,7 +6,6 @@
 //  Copyright © 2018年 Xiao Xiao. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "WXApi.h"
 #import "WXApiObject.h"
 typedef NS_ENUM(NSInteger,WXShareSceneType){

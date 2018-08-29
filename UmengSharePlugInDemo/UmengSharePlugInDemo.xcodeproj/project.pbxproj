@@ -20,8 +20,7 @@
 		006772B92133E05C0062C438 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006772B42133E05C0062C438 /* CoreTelephony.framework */; };
 		006772BA2133E05C0062C438 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 006772B52133E05C0062C438 /* libsqlite3.tbd */; };
 		006772BB2133E05C0062C438 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006772B62133E05C0062C438 /* SystemConfiguration.framework */; };
-		006772BF2133E0A80062C438 /* LFShareManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772BE2133E0A80062C438 /* LFShareManager.m */; };
-		006772C22133E0BD0062C438 /* LFShareLogInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772C12133E0BD0062C438 /* LFShareLogInManager.m */; };
+		006772BF2133E0A80062C438 /* LFShareAndLogInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */; };
 		006772C62133E0D40062C438 /* LFShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772C52133E0D40062C438 /* LFShareModel.m */; };
 		006772E02133E4AC0062C438 /* LFShareKeyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772DF2133E4AC0062C438 /* LFShareKeyModel.m */; };
 		007D74E821364B1E00D3C874 /* LFQQApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */; };
@@ -72,10 +71,8 @@
 		006772B42133E05C0062C438 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		006772B52133E05C0062C438 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		006772B62133E05C0062C438 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		006772BD2133E0A80062C438 /* LFShareManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareManager.h; sourceTree = "<group>"; };
-		006772BE2133E0A80062C438 /* LFShareManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareManager.m; sourceTree = "<group>"; };
-		006772C02133E0BD0062C438 /* LFShareLogInManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareLogInManager.h; sourceTree = "<group>"; };
-		006772C12133E0BD0062C438 /* LFShareLogInManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareLogInManager.m; sourceTree = "<group>"; };
+		006772BD2133E0A80062C438 /* LFShareAndLogInManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareAndLogInManager.h; sourceTree = "<group>"; };
+		006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareAndLogInManager.m; sourceTree = "<group>"; };
 		006772C42133E0D40062C438 /* LFShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareModel.h; sourceTree = "<group>"; };
 		006772C52133E0D40062C438 /* LFShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareModel.m; sourceTree = "<group>"; };
 		006772DE2133E4AC0062C438 /* LFShareKeyModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareKeyModel.h; sourceTree = "<group>"; };
@@ -194,10 +191,8 @@
 			isa = PBXGroup;
 			children = (
 				006772C32133E0C50062C438 /* model */,
-				006772BD2133E0A80062C438 /* LFShareManager.h */,
-				006772BE2133E0A80062C438 /* LFShareManager.m */,
-				006772C02133E0BD0062C438 /* LFShareLogInManager.h */,
-				006772C12133E0BD0062C438 /* LFShareLogInManager.m */,
+				006772BD2133E0A80062C438 /* LFShareAndLogInManager.h */,
+				006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */,
 				007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */,
 				007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */,
 				007D74E921364B2D00D3C874 /* LFWXApiPlugIn.h */,
@@ -463,7 +458,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				006772C22133E0BD0062C438 /* LFShareLogInManager.m in Sources */,
 				007D74EB21364B2D00D3C874 /* LFWXApiPlugIn.m in Sources */,
 				006772852133DFD90062C438 /* ViewController.m in Sources */,
 				006772902133DFDA0062C438 /* main.m in Sources */,
@@ -472,7 +466,7 @@
 				006772822133DFD90062C438 /* AppDelegate.m in Sources */,
 				007D74EE21364B3600D3C874 /* LFWBApiPlugIn.m in Sources */,
 				006772E02133E4AC0062C438 /* LFShareKeyModel.m in Sources */,
-				006772BF2133E0A80062C438 /* LFShareManager.m in Sources */,
+				006772BF2133E0A80062C438 /* LFShareAndLogInManager.m in Sources */,
 				007D74E821364B1E00D3C874 /* LFQQApiPlugIn.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
