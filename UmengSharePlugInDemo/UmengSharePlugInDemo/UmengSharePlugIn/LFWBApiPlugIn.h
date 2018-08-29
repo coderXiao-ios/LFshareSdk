@@ -15,13 +15,13 @@
 /**
  *收到微博的请求后，一些回调
  */
-- (void)WBApiUtilsDidRecvSendMessageReq:(WBSendMessageToWeiboRequest *)request;
-- (void)WBApiUtilsDidRecvAuthorizeReq:(WBAuthorizeRequest *)request;
+- (void)WBApiPlugInDidRecvSendMessageReq:(WBSendMessageToWeiboRequest *)request;
+- (void)WBApiPlugInDidRecvAuthorizeReq:(WBAuthorizeRequest *)request;
 /**
  * 收到微博的响应后，一些回调
  */
-- (void)WBApiUtilsDidRecvSendMessageResponse:(WBSendMessageToWeiboResponse *)response;
-- (void)WBApiUtilsDidRecvAuthorizeResponse:(WBAuthorizeResponse *)response;
+- (void)WBApiPlugInDidRecvSendMessageResponse:(WBSendMessageToWeiboResponse *)response;
+- (void)WBApiPlugInDidRecvAuthorizeResponse:(WBAuthorizeResponse *)response;
 @end
 @interface LFWBApiPlugIn : NSObject<WeiboSDKDelegate>
 @property (weak , nonatomic)id <LFWBApiPlugInDelegate> wbDelegate;

@@ -129,8 +129,8 @@
  */
 - (void)tencentDidLogout{
 //    [[NSNotificationCenter defaultCenter] postNotificationName:TencentOAuthManagerDidLogout object:nil];
-    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsTencentDidLogout)]) {
-        [self.qqDelegate QQApiUtilsTencentDidLogout];
+    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInTencentDidLogout)]) {
+        [self.qqDelegate QQApiPlugInTencentDidLogout];
     }
 }
 /**
@@ -145,8 +145,8 @@
         && kOpenSDKErrorSuccess == response.detailRetCode)
     {
         //跳转QQ
-        if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsGetUserInfoResponse:tencentOAuth:)]) {
-            [self.qqDelegate QQApiUtilsGetUserInfoResponse:response tencentOAuth:self.tencentOauth];
+        if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInGetUserInfoResponse:tencentOAuth:)]) {
+            [self.qqDelegate QQApiPlugInGetUserInfoResponse:response tencentOAuth:self.tencentOauth];
         }
     }
 }
@@ -169,8 +169,8 @@
 - (void)tencentDidLogin{
 //    [[NSNotificationCenter defaultCenter] postNotificationName:TencentOAuthManagerLoginSuccessed object:nil];
     [self.tencentOauth getUserInfo];
-    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsTencentDidLogin)]) {
-        [self.qqDelegate QQApiUtilsTencentDidLogin];
+    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInTencentDidLogin)]) {
+        [self.qqDelegate QQApiPlugInTencentDidLogin];
     }
 }
 /**
@@ -179,8 +179,8 @@
  */
 - (void)tencentDidNotLogin:(BOOL)cancelled{
 //    [[NSNotificationCenter defaultCenter] postNotificationName:TencentOAuthManagerLoginCancelled object:nil];
-    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsTencentDidNotLogin:)]) {
-        [self.qqDelegate QQApiUtilsTencentDidNotLogin:cancelled];
+    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInTencentDidNotLogin:)]) {
+        [self.qqDelegate QQApiPlugInTencentDidNotLogin:cancelled];
     }
 }
 /**
@@ -188,8 +188,8 @@
  */
 - (void)tencentDidNotNetWork{
 //    [[NSNotificationCenter defaultCenter] postNotificationName:TencentOAuthManagerLoginFailed object:nil];
-    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsTencentDidNotNetWork)]) {
-        [self.qqDelegate QQApiUtilsTencentDidNotNetWork];
+    if (self.qqDelegate && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInTencentDidNotNetWork)]) {
+        [self.qqDelegate QQApiPlugInTencentDidNotNetWork];
     }
 }
 #pragma mark- ---------------QQApiInterfaceDelegate 分享相关的
@@ -208,27 +208,27 @@
     {
         //获取消息
         if (self.qqDelegate
-            && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsDidRecvMessageResponse:)]) {
+            && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInDidRecvMessageResponse:)]) {
             GetMessageFromQQResp* getMessageFromQQResponse = (GetMessageFromQQResp*)resp;
-            [self.qqDelegate QQApiUtilsDidRecvMessageResponse:getMessageFromQQResponse];
+            [self.qqDelegate QQApiPlugInDidRecvMessageResponse:getMessageFromQQResponse];
         }
     }
     else if ([resp isKindOfClass:SendMessageToQQResp.class])
     {
         //发送消息
         if (self.qqDelegate
-            && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsDidRecvSendMessageResponse:)]) {
+            && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInDidRecvSendMessageResponse:)]) {
             SendMessageToQQResp *sendMessageToQQResponse = (SendMessageToQQResp *)resp;
-            [self.qqDelegate QQApiUtilsDidRecvSendMessageResponse:sendMessageToQQResponse];
+            [self.qqDelegate QQApiPlugInDidRecvSendMessageResponse:sendMessageToQQResponse];
         }
     }
     else if ([resp isKindOfClass:ShowMessageFromQQResp.class])
     {
         //展示消息
         if (self.qqDelegate
-            && [self.qqDelegate respondsToSelector:@selector(QQApiUtilsDidRecvShowMessageResponse:)]) {
+            && [self.qqDelegate respondsToSelector:@selector(QQApiPlugInDidRecvShowMessageResponse:)]) {
             ShowMessageFromQQResp *sendMessageFromQQResponse = (ShowMessageFromQQResp *)resp;
-            [self.qqDelegate QQApiUtilsDidRecvShowMessageResponse:sendMessageFromQQResponse];
+            [self.qqDelegate QQApiPlugInDidRecvShowMessageResponse:sendMessageFromQQResponse];
         }
     }
 }

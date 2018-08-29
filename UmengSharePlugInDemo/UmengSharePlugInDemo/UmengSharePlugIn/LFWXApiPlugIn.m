@@ -137,23 +137,23 @@
     if ([req isKindOfClass:[GetMessageFromWXReq class]]) {
         //微信终端向第三方程序请求提供内容的消息结构体
         if (self.wxDelegate
-            && [self.wxDelegate respondsToSelector:@selector(WXApiUtilsDidRecvGetMessageReq:)]) {
+            && [self.wxDelegate respondsToSelector:@selector(WXApiPlugInDidRecvGetMessageReq:)]) {
             GetMessageFromWXReq *getMessageReq = (GetMessageFromWXReq *)req;
-            [self.wxDelegate WXApiUtilsDidRecvGetMessageReq:getMessageReq];
+            [self.wxDelegate WXApiPlugInDidRecvGetMessageReq:getMessageReq];
         }
     } else if ([req isKindOfClass:[ShowMessageFromWXReq class]]) {
         //微信通知第三方程序，要求第三方程序显示的消息结构体
         if (self.wxDelegate
-            && [self.wxDelegate respondsToSelector:@selector(WXApiUtilsDidRecvShowMessageReq:)]) {
+            && [self.wxDelegate respondsToSelector:@selector(WXApiPlugInDidRecvShowMessageReq:)]) {
             ShowMessageFromWXReq *showMessageReq = (ShowMessageFromWXReq *)req;
-            [self.wxDelegate WXApiUtilsDidRecvShowMessageReq:showMessageReq];
+            [self.wxDelegate WXApiPlugInDidRecvShowMessageReq:showMessageReq];
         }
     } else if ([req isKindOfClass:[LaunchFromWXReq class]]) {
         //微信终端打开第三方程序携带的消息结构体
         if (self.wxDelegate
-            && [self.wxDelegate respondsToSelector:@selector(WXApiUtilsDidRecvLaunchFromWXReq:)]) {
+            && [self.wxDelegate respondsToSelector:@selector(WXApiPlugInDidRecvLaunchFromWXReq:)]) {
             LaunchFromWXReq *launchReq = (LaunchFromWXReq *)req;
-            [self.wxDelegate WXApiUtilsDidRecvLaunchFromWXReq:launchReq];
+            [self.wxDelegate WXApiPlugInDidRecvLaunchFromWXReq:launchReq];
         }
     }
 }
@@ -166,16 +166,16 @@
    if ([resp isKindOfClass:[SendMessageToWXResp class]]) {
         //第三方程序向微信终端发送SendMessageToWXReq后，微信发送回来的处理结果，该结果用SendMessageToWXResp表示。
         if (self.wxDelegate
-            && [self.wxDelegate respondsToSelector:@selector(WXApiUtilsDidRecvMessageResponse:)]) {
+            && [self.wxDelegate respondsToSelector:@selector(WXApiPlugInDidRecvMessageResponse:)]) {
             SendMessageToWXResp *messageResp = (SendMessageToWXResp *)resp;
-            [self.wxDelegate WXApiUtilsDidRecvMessageResponse:messageResp];
+            [self.wxDelegate WXApiPlugInDidRecvMessageResponse:messageResp];
         }
     } else if ([resp isKindOfClass:[SendAuthResp class]]) {
         //微信处理完第三方程序的认证和权限申请后向第三方程序回送的处理结果
         if (self.wxDelegate
-            && [self.wxDelegate respondsToSelector:@selector(WXApiUtilsDidRecvAuthResponse:)]) {
+            && [self.wxDelegate respondsToSelector:@selector(WXApiPlugInDidRecvAuthResponse:)]) {
             SendAuthResp *authResp = (SendAuthResp *)resp;
-            [self.wxDelegate WXApiUtilsDidRecvAuthResponse:authResp];
+            [self.wxDelegate WXApiPlugInDidRecvAuthResponse:authResp];
         }
     }
 }

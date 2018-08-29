@@ -21,34 +21,34 @@ typedef NS_ENUM(NSUInteger, QQShareType) {
 /**
  * 退出登录的回调
  */
-- (void)QQApiUtilsTencentDidLogout;
+- (void)QQApiPlugInTencentDidLogout;
 /**
  * 登录成功后的回调
  */
-- (void)QQApiUtilsTencentDidLogin;
+- (void)QQApiPlugInTencentDidLogin;
 /**
  * 登录失败后的回调
  * \param cancelled 代表用户是否主动退出登录
  */
-- (void)QQApiUtilsTencentDidNotLogin:(BOOL)cancelled;
+- (void)QQApiPlugInTencentDidNotLogin:(BOOL)cancelled;
 /**
  * 登录时网络有问题的回调
  */
-- (void)QQApiUtilsTencentDidNotNetWork;
+- (void)QQApiPlugInTencentDidNotNetWork;
 /**
  * 登录成功获取用户个人信息回调
  * \param response API返回结果，具体定义参见sdkdef.h文件中\ref APIResponse
  * \remarks 正确返回示例: \snippet example/getUserInfoResponse.exp success
  *          错误返回示例: \snippet example/getUserInfoResponse.exp fail
  */
-- (void)QQApiUtilsGetUserInfoResponse:(APIResponse*) response tencentOAuth:(TencentOAuth *)tencentOAut;
+- (void)QQApiPlugInGetUserInfoResponse:(APIResponse*) response tencentOAuth:(TencentOAuth *)tencentOAut;
 
 /**
  * 消息应答响应
  */
-- (void)QQApiUtilsDidRecvMessageResponse:(GetMessageFromQQResp *)response;
-- (void)QQApiUtilsDidRecvSendMessageResponse:(SendMessageToQQResp *)response;
-- (void)QQApiUtilsDidRecvShowMessageResponse:(ShowMessageFromQQResp *)Response;
+- (void)QQApiPlugInDidRecvMessageResponse:(GetMessageFromQQResp *)response;
+- (void)QQApiPlugInDidRecvSendMessageResponse:(SendMessageToQQResp *)response;
+- (void)QQApiPlugInDidRecvShowMessageResponse:(ShowMessageFromQQResp *)Response;
 @end
 @interface LFQQApiPlugIn : NSObject<TencentSessionDelegate,TencentLoginDelegate,QQApiInterfaceDelegate>
 @property(weak,nonatomic)id<LFQQApiPlugInDelegate>qqDelegate;

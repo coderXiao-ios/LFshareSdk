@@ -124,17 +124,17 @@
     if ([request isKindOfClass:WBSendMessageToWeiboResponse.class])
     {
         if (self.wbDelegate
-            && [self.wbDelegate respondsToSelector:@selector(WBApiUtilsDidRecvSendMessageReq:)]) {
+            && [self.wbDelegate respondsToSelector:@selector(WBApiPlugInDidRecvSendMessageReq:)]) {
             WBSendMessageToWeiboRequest* sendMessageToWeiboReq = (WBSendMessageToWeiboRequest*)request;
-            [self.wbDelegate WBApiUtilsDidRecvSendMessageReq:sendMessageToWeiboReq];
+            [self.wbDelegate WBApiPlugInDidRecvSendMessageReq:sendMessageToWeiboReq];
         }
     }
     else if ([request isKindOfClass:WBAuthorizeResponse.class])
     {
         if (self.wbDelegate
-            && [self.wbDelegate respondsToSelector:@selector(WBApiUtilsDidRecvAuthorizeReq:)]) {
+            && [self.wbDelegate respondsToSelector:@selector(WBApiPlugInDidRecvAuthorizeReq:)]) {
             WBAuthorizeRequest *authReq = (WBAuthorizeRequest *)request;
-            [self.wbDelegate WBApiUtilsDidRecvAuthorizeReq:authReq];
+            [self.wbDelegate WBApiPlugInDidRecvAuthorizeReq:authReq];
         }
     }
     
@@ -150,17 +150,17 @@
     if ([response isKindOfClass:WBSendMessageToWeiboResponse.class])
     {
         if (self.wbDelegate
-            && [self.wbDelegate respondsToSelector:@selector(WBApiUtilsDidRecvSendMessageResponse:)]) {
+            && [self.wbDelegate respondsToSelector:@selector(WBApiPlugInDidRecvSendMessageResponse:)]) {
             WBSendMessageToWeiboResponse* sendMessageToWeiboResponse = (WBSendMessageToWeiboResponse*)response;
-            [self.wbDelegate WBApiUtilsDidRecvSendMessageResponse:sendMessageToWeiboResponse];
+            [self.wbDelegate WBApiPlugInDidRecvSendMessageResponse:sendMessageToWeiboResponse];
         }
     }
     else if ([response isKindOfClass:WBAuthorizeResponse.class])
     {
         if (self.wbDelegate
-            && [self.wbDelegate respondsToSelector:@selector(WBApiUtilsDidRecvAuthorizeResponse:)]) {
+            && [self.wbDelegate respondsToSelector:@selector(WBApiPlugInDidRecvAuthorizeResponse:)]) {
             WBAuthorizeResponse *authResp = (WBAuthorizeResponse *)response;
-            [self.wbDelegate WBApiUtilsDidRecvAuthorizeResponse:authResp];
+            [self.wbDelegate WBApiPlugInDidRecvAuthorizeResponse:authResp];
         }
     }
     
