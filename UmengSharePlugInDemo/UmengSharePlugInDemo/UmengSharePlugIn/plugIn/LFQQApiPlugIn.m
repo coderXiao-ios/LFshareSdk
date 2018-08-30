@@ -67,7 +67,6 @@
                          image:(UIImage *)image
                      shareType:(QQShareType) sharedType
 {
-    self.tencentOauth = [[TencentOAuth alloc]initWithAppId:LFQQAppkey andDelegate:self];
     UIImage *compressedImage = [image imageWithFileSize:32*1024 scaledToSize:CGSizeMake(300, 300)];
     NSData *imageData = UIImageJPEGRepresentation(compressedImage,1.0);
     NSString *description = message;
@@ -88,15 +87,13 @@
     {
         //将内容分享到qq
         sent = [QQApiInterface sendReq:req];
-    }
-    else {
+    }else {
         //将内容分享到qzone
         sent = [QQApiInterface SendReqToQZone:req];
     }
     if (sent == EQQAPISENDSUCESS) {
         return YES;
-    }
-    else {
+    }else {
         return NO;
     }
     return NO;

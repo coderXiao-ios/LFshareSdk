@@ -23,7 +23,7 @@
     });
     return sharedInstance;
 }
-#pragma mark- AppDelegate方法处理
+#pragma mark- public方法
 -(void)registerThirdPlatform{
     //微信注册
     [self.wxPlugIn WXRegister];
@@ -31,24 +31,50 @@
     [self.wbPlugIn WBRegister:YES];
 }
 
-- (BOOL)thirdPlatformApplication:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options{
+- (BOOL)thirdPlatformApplicationHandleOpenURL:(NSURL *)url {
+    
     if ([LFTencentURLScheme isEqualToString:[url scheme]]) {
         //QQ
-        return [TencentOAuth HandleOpenURL:url];
-        
-    }else if ([LFQQURLScheme isEqualToString:[url scheme]]) {
-        //QQ
+        if (YES == [TencentOAuth CanHandleOpenURL:url])
+        {
+            return [TencentOAuth HandleOpenURL:url];
+        }
         return [QQApiInterface handleOpenURL:url delegate:self.qqPlugIn];
-        
     }else if ([LFWXURLScheme isEqualToString:[url scheme]]) {
         //微信
         return [WXApi handleOpenURL:url delegate:self.wxPlugIn];
-        
     }else if ([LFSinaURLScheme isEqualToString:[url scheme]]){
         //微博
         return [WeiboSDK handleOpenURL:url delegate:self.wbPlugIn];
     }
     return NO;
+}
+
+- (void)logOut{
+    [self.qqPlugIn QQLogout];
+//    [self.wbPlugIn WBOauthLogin];
+}
+
+- (void) shareToThirdPlatFormWithModel:(LFShareModel *)model{
+    switch (model.platform) {
+        case LFSharePlatFormQQ:
+            
+            break;
+        case LFSharePlatFormQQZone:
+            
+            break;
+        case LFSharePlatFormWX:
+            
+            break;
+        case LFSharePlatFormWXFriends:
+            
+            break;
+        case LFSharePlatFormWeiBo:
+            
+            break;
+        default:
+            break;
+    }
 }
 #pragma mark- 显示提示语
 -(void)showToastMessage:(NSString *)message{
@@ -59,6 +85,74 @@
 -(void)loginSuccess:(NSDictionary *)responseObject{
     if (self.delegate && [self.delegate respondsToSelector:@selector(thirdPlatformDidLoginSuccess:)]) {
         [self.delegate thirdPlatformDidLoginSuccess:responseObject];
+    }
+}
+#pragma mark- QQApiUtilsDelegate  QQ代理
+/**
+ * 登录成功后的回调
+ */
+- (void)QQApiUtilsTencentDidLogin{
+    //授权成功正在登录中
+    [self showToastMessage:LFQQToastLoginSuccessed];
+}
+/**
+ * 登录失败后的回调
+ * \param cancelled 代表用户是否主动退出登录
+ */
+- (void)QQApiUtilsTencentDidNotLogin:(BOOL)cancelled{
+    if(cancelled){
+        [self showToastMessage:LFQQToastLoginCancelled];
+    }else{
+        [self showToastMessage:LFQQToastLoginFailed];
+    }
+}
+/**
+ * 登录时网络有问题的回调
+ */
+- (void)QQApiUtilsTencentDidNotNetWork{
+    [self showToastMessage:LFQQToastNetworkError];
+}
+/**
+ * 登录成功获取用户个人信息回调
+ */
+- (void)QQApiUtilsGetUserInfoResponse:(APIResponse*) response tencentOAuth:(TencentOAuth *)tencentOAut{
+    //获取到QQ的用户信息
+    NSLog(@"===%@",response.jsonResponse);
+    NSInteger gender = 0;
+    if ([response.jsonResponse[@"gender"] isEqualToString:@"男"]){
+        gender = 1;
+    }
+    NSMutableDictionary * params = [NSMutableDictionary dictionary];
+    [params setValue:tencentOAut.openId forKey:@"openid"];//openid【必须】
+    [params setValue:[response.jsonResponse objectForKey:@"nickname"] forKey:@"nickName"];//QQ昵称【必须】
+    [params setValue:[response.jsonResponse objectForKey:@"figureurl_qq_2"] forKey:@"avatar"];//头像【必须】
+    [params setValue:gender == 1 ? @"男":@"女" forKey:@"sex"];//性别【必须】
+    //登录成功回调
+#warning 需要开发调用自己的登录接口
+    [self loginSuccess:params];
+}
+
+- (void)QQApiUtilsDidRecvSendMessageResponse:(SendMessageToQQResp *)response{
+    switch (response.type)
+    {
+        case ESENDMESSAGETOQQRESPTYPE:
+        {
+            if ([response.result isEqualToString:@"0"])
+            {
+                //QQ分享成功
+                [self showToastMessage:LFQQToastShareSuccessed];
+            }
+            else
+            {
+                //QQ分享失败
+                [self showToastMessage:LFQQToastShareFailed];
+            }
+            break;
+        }
+        default:
+        {
+            break;
+        }
     }
 }
 #pragma mark- WXApiUtilsDelegate  微信代理

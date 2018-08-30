@@ -27,6 +27,16 @@
 @property(strong,nonatomic)LFWBApiPlugIn * wbPlugIn;
 + (LFShareAndLogInManager *)sharedInstance;
 #pragma mark- AppDelegate方法处理
+/**
+ * 注册平台
+ */
 -(void)registerThirdPlatform;
-- (BOOL)thirdPlatformApplication:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options;
+/**
+ * 第三方登录,分享跳转事件
+ */
+- (BOOL)thirdPlatformApplicationHandleOpenURL:(NSURL *)url;
+/**
+ * 退出登录
+ */
+-(void)logOut;
 @end

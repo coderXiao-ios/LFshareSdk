@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+typedef enum : NSUInteger {
+    LFSharePlatFormWX,
+    LFSharePlatFormWXFriends,
+    LFSharePlatFormWeiBo,
+    LFSharePlatFormQQ,
+    LFSharePlatFormQQZone,
+} LFSharePlatFormType;
 @interface LFShareModel : NSObject
 /** 分享标题 */
 @property (nonatomic, copy) NSString *title;
@@ -19,6 +25,8 @@
 @property (nonatomic, copy) NSString *imageUrl;
 
 /** 分享地址 */
-@property (nonatomic, copy) NSString *webpageUrl;
+@property (nonatomic, copy) NSString *linkUrl;
 
+/** 分享平台 */
+@property (nonatomic, assign) LFSharePlatFormType platform;
 @end

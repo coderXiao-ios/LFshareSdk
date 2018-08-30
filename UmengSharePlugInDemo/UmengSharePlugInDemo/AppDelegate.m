@@ -22,12 +22,18 @@
 }
 
 #pragma mark --------------------三方登录分享相关---------------------------------
-
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options{
-    return [[LFShareAndLogInManager sharedInstance] thirdPlatformApplication:app openURL:url options:options];
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
+{
+    return [[LFShareAndLogInManager sharedInstance] thirdPlatformApplicationHandleOpenURL:url];
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options{
+    return [[LFShareAndLogInManager sharedInstance] thirdPlatformApplicationHandleOpenURL:url];
+}
 
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return [[LFShareAndLogInManager sharedInstance] thirdPlatformApplicationHandleOpenURL:url];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

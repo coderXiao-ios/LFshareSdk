@@ -9,6 +9,9 @@
 #import "LFWXApiPlugIn.h"
 #import "UIImage+Tailoring.h"
 #import "LFShareConst.h"
+@interface LFWXApiPlugIn()
+//@property(nonatomic, copy)NSString *
+@end
 @implementation LFWXApiPlugIn
 + (LFWXApiPlugIn *)sharedInstance
 {

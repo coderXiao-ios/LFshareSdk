@@ -22,18 +22,23 @@
 
 static NSString *const LFUMengAppkey = @"5861e5daf5ade41326001eab";
 
-static NSString *const LFWXAppkey = @"wxaacd80f5db150672";
-static NSString *const LFWXAppSecret = @"936d790fc336cc6ca868f082b87b7df7";
+//微信
+static NSString *const LFWXAppkey = @"wx0956d7043849b19a";
+static NSString *const LFWXAppSecret = @"728e98806e2592b86cd535e08e4b0616";
+static NSString *const LFWXURLScheme = @"wx0956d7043849b19a";
+
+//QQ
 static NSString *const LFQQAppkey = @"1105737761";
-static NSString *const LFQQAppSecret = @"I8PHlY7HkoczzI1E";
-static NSString *const LFSinaAppkey = @"UMSinaAppID";
-static NSString *const LFSinaAppSecret = @"50992bec1bcce331172eadc5960255b1";
+static NSString *const LFQQAppSecret = @"JCViBopbm1F2E2ZT";
+static NSString *const LFTencentURLScheme = @"tencent1105737761";
+
+//微博
+static NSString *const LFSinaAppkey = @"2601129562";
+static NSString *const LFSinaAppSecret = @"e66df1b17344fa7bf2ec40f207be7c8b";
+static NSString *const LFSinaURLScheme = @"wb2601129562";
+
 static NSString *const LFShareRedirectURL = @"http://www.hefantv.com";
 
-static NSString *const LFSinaURLScheme = @"wb1412448931";
-static NSString *const LFWXURLScheme = @"wxaacd80f5db150672";
-static NSString *const LFQQURLScheme = @"QQ41e83821";
-static NSString *const LFTencentURLScheme = @"tencent1105737761";
 
 //----------------------------提示语相关-------------------
 //QQ

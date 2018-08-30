@@ -53,6 +53,12 @@
 - (void)delegateDealloc{
     self.wbDelegate = nil;
 }
+
+
+//- (void) logOut{
+//    [WeiboSDK logOutWithToken:self.wbOauth delegate:self withTag:nil];
+//}
+
 //分享图片
 - (BOOL)sharedImageToSinaWeibo:(NSString *) message
                          image:(UIImage *)image
