@@ -187,31 +187,10 @@
     }
     else if (oauthResp.errCode == WXSuccess)
     {
-        //登录成功
-        NSString *url = [NSString stringWithFormat:@"https://api.weixin.qq.com/sns/oauth2/access_token?appid=%@&secret=%@&code=%@&grant_type=authorization_code",LFWXAppkey,LFWXAppSecret,response.code];
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            NSURL *zoneUrl = [NSURL URLWithString:url];
-            NSString *zoneStr = [NSString stringWithContentsOfURL:zoneUrl encoding:NSUTF8StringEncoding error:nil];
-            NSData *data = [zoneStr dataUsingEncoding:NSUTF8StringEncoding];
-            typeof(self) __weak weakSelf = self;
-            dispatch_async(dispatch_get_main_queue(), ^{
-                if (data) {
-                    typeof(weakSelf) __strong strongSelf = weakSelf;
-                    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
-                    //获取到的三方凭证
-                    NSString * access_token = dic[@"access_token"];
-                    //三方唯一标识
-                    NSString * openid = dic[@"openid"];
-                    [strongSelf getWXUserInfo:access_token openid:openid];
-                }
-            });
-        });
+        //TODO:获取到微信code 请求后台接口授权
+        [self loginSuccess:nil];
         [self showToastMessage:LFWXToastLoginSuccessed];
     }
-}
-//微信返回第三方添加卡券结果
-- (void)WXApiUtilsDidRecvAddCardResponse:(AddCardToWXCardPackageResp *)response{
-    
 }
 
 //获取微信用户信息

@@ -1,4 +1,5 @@
 PODS:
+  - ReactiveObjC (3.1.0)
   - UMengUShare/Core (6.4.8.2):
     - UMengUShare/Network
   - UMengUShare/Network (6.4.8.2)
@@ -19,17 +20,20 @@ PODS:
     - UMengUShare/Social/ReducedWeChat
 
 DEPENDENCIES:
+  - ReactiveObjC (~> 3.1.0)
   - UMengUShare/Social/QQ (~> 6.4.8.2)
   - UMengUShare/Social/Sina (~> 6.4.8.2)
   - UMengUShare/Social/WeChat (~> 6.4.8.2)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ReactiveObjC
     - UMengUShare
 
 SPEC CHECKSUMS:
+  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
   UMengUShare: 370d180101e13ee0227ae657ab119ba97243d2b3
 
-PODFILE CHECKSUM: 302ed20e8b446f456b2517da0f8e27d0813db42d
+PODFILE CHECKSUM: d6b536a0fe1c6d133d3992cf4a0b2019f2ee4239
 
 COCOAPODS: 1.5.3

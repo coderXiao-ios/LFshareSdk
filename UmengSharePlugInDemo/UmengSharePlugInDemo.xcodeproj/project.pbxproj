@@ -22,6 +22,8 @@
 		006772BB2133E05C0062C438 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006772B62133E05C0062C438 /* SystemConfiguration.framework */; };
 		006772BF2133E0A80062C438 /* LFShareAndLogInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772BE2133E0A80062C438 /* LFShareAndLogInManager.m */; };
 		006772C62133E0D40062C438 /* LFShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 006772C52133E0D40062C438 /* LFShareModel.m */; };
+		007B39F22139217F003F4A20 /* LFLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007B39F02139217F003F4A20 /* LFLogInViewController.m */; };
+		007B39F32139217F003F4A20 /* LFLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007B39F12139217F003F4A20 /* LFLogInViewController.xib */; };
 		007D74E821364B1E00D3C874 /* LFQQApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */; };
 		007D74EB21364B2D00D3C874 /* LFWXApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74EA21364B2D00D3C874 /* LFWXApiPlugIn.m */; };
 		007D74EE21364B3600D3C874 /* LFWBApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 007D74ED21364B3600D3C874 /* LFWBApiPlugIn.m */; };
@@ -77,6 +79,9 @@
 		006772C42133E0D40062C438 /* LFShareModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareModel.h; sourceTree = "<group>"; };
 		006772C52133E0D40062C438 /* LFShareModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareModel.m; sourceTree = "<group>"; };
 		006772E12133E5D40062C438 /* LFShareConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareConst.h; sourceTree = "<group>"; };
+		007B39EF2139217F003F4A20 /* LFLogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLogInViewController.h; sourceTree = "<group>"; };
+		007B39F02139217F003F4A20 /* LFLogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLogInViewController.m; sourceTree = "<group>"; };
+		007B39F12139217F003F4A20 /* LFLogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFLogInViewController.xib; sourceTree = "<group>"; };
 		007D74E621364B1E00D3C874 /* LFQQApiPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFQQApiPlugIn.h; sourceTree = "<group>"; };
 		007D74E721364B1E00D3C874 /* LFQQApiPlugIn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFQQApiPlugIn.m; sourceTree = "<group>"; };
 		007D74E921364B2D00D3C874 /* LFWXApiPlugIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFWXApiPlugIn.h; sourceTree = "<group>"; };
@@ -193,6 +198,7 @@
 		006772BC2133E07E0062C438 /* UmengSharePlugIn */ = {
 			isa = PBXGroup;
 			children = (
+				007B39EE21391FDD003F4A20 /* controller */,
 				007D74FD21368F6E00D3C874 /* plugIn */,
 				007D74F921368F0200D3C874 /* tool */,
 				007D74F22136872900D3C874 /* view */,
@@ -208,6 +214,16 @@
 				006772C52133E0D40062C438 /* LFShareModel.m */,
 			);
 			path = model;
+			sourceTree = "<group>";
+		};
+		007B39EE21391FDD003F4A20 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				007B39EF2139217F003F4A20 /* LFLogInViewController.h */,
+				007B39F02139217F003F4A20 /* LFLogInViewController.m */,
+				007B39F12139217F003F4A20 /* LFLogInViewController.xib */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 		007D74F22136872900D3C874 /* view */ = {
@@ -381,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007B39F32139217F003F4A20 /* LFLogInViewController.xib in Resources */,
 				0067728D2133DFDA0062C438 /* LaunchScreen.storyboard in Resources */,
 				0067728A2133DFDA0062C438 /* Assets.xcassets in Resources */,
 				006772882133DFD90062C438 /* Main.storyboard in Resources */,
@@ -491,6 +508,7 @@
 				007D74EB21364B2D00D3C874 /* LFWXApiPlugIn.m in Sources */,
 				006772852133DFD90062C438 /* ViewController.m in Sources */,
 				006772902133DFDA0062C438 /* main.m in Sources */,
+				007B39F22139217F003F4A20 /* LFLogInViewController.m in Sources */,
 				007D74F121364E7200D3C874 /* UIImage+Tailoring.m in Sources */,
 				007D74F821368A2A00D3C874 /* LFSharePopView.m in Sources */,
 				006772C62133E0D40062C438 /* LFShareModel.m in Sources */,

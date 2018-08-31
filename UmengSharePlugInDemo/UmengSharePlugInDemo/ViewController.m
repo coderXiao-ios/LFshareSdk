@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "LFShareAndLogInManager.h"
+#import "LFLogInViewController.h"
 @interface ViewController ()
 
 @end
@@ -21,11 +22,8 @@
 }
 
 - (IBAction)shareAction:(id)sender {
-    LFShareModel *model = [[LFShareModel alloc] init];
-    model.content = @"测试一下分享";
-    model.title = @"标题测试";
-    model.webpageUrl =@"www.baidu.com";
-//    [LFShareManager showUMShareView:model];
+    LFLogInViewController *logInVC =[[LFLogInViewController alloc] initWithNibName:NSStringFromClass([LFLogInViewController class]) bundle:[NSBundle mainBundle]];
+        [self presentViewController:logInVC animated:YES completion:nil] ;
 }
 
 - (IBAction)LogInAction:(UIButton *)sender {

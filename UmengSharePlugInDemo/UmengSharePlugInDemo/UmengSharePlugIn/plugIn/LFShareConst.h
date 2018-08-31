@@ -8,33 +8,32 @@
 
 #ifndef LFShareConst_h
 #define LFShareConst_h
+#define iPhoneX() ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
 
+#define IPhoneXSafeAreaPotraitTop 44
+#define IPhoneXSafeAreaPotraitBottom 34
+#define IPhoneXSafeAreaPotraitLeft 0
+#define IPhoneXSafeAreaPotraitRight 0
 
-//QQ
-#define UMQQAppID @"1105737761"
-#define UMQQAppSecret @"I8PHlY7HkoczzI1E"
-//微信
-#define UMWeChatAppID @"wxaacd80f5db150672"
-#define UMWeChatAppSecret @"936d790fc336cc6ca868f082b87b7df7"
-//微博
-#define UMSinaAppID @"1412448931"
-#define UMSinaAppSecret @"50992bec1bcce331172eadc5960255b1"
+#define IPhoneXSafeAreaLanscapeTop 0
+#define IPhoneXSafeAreaLanscapeBottom 21
+#define IPhoneXSafeAreaLanscapeLeft 44
+#define IPhoneXSafeAreaLanscapeRight 44
 
-static NSString *const LFUMengAppkey = @"5861e5daf5ade41326001eab";
+#define ScreenNarrowSide MIN(CGRectGetWidth([UIScreen mainScreen].bounds), CGRectGetHeight([UIScreen mainScreen].bounds))
+
+#define AspectScale(measure) ((measure) *(ScreenNarrowSide/375.f))
 
 //微信
 static NSString *const LFWXAppkey = @"wx0956d7043849b19a";
-static NSString *const LFWXAppSecret = @"728e98806e2592b86cd535e08e4b0616";
 static NSString *const LFWXURLScheme = @"wx0956d7043849b19a";
 
 //QQ
 static NSString *const LFQQAppkey = @"1105737761";
-static NSString *const LFQQAppSecret = @"JCViBopbm1F2E2ZT";
 static NSString *const LFTencentURLScheme = @"tencent1105737761";
 
 //微博
 static NSString *const LFSinaAppkey = @"2601129562";
-static NSString *const LFSinaAppSecret = @"e66df1b17344fa7bf2ec40f207be7c8b";
 static NSString *const LFSinaURLScheme = @"wb2601129562";
 
 static NSString *const LFShareRedirectURL = @"http://www.hefantv.com";

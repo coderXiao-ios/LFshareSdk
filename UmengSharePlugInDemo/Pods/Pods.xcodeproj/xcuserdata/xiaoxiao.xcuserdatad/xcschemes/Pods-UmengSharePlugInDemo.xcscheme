@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "07A75C5839DD3C750BF95881F2CC9073"
+               BlueprintIdentifier = "8AFCAD1B9524F68766E1B8A782229E56"
                BlueprintName = "Pods-UmengSharePlugInDemo"
                ReferencedContainer = "container:Pods.xcodeproj"
                BuildableName = "libPods-UmengSharePlugInDemo.a">

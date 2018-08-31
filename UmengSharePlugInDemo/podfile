@@ -6,9 +6,12 @@ target 'UmengSharePlugInDemo' do
 pod 'UMengUShare/Social/WeChat', '~>6.4.8.2'
 pod 'UMengUShare/Social/QQ', '~>6.4.8.2'
 pod 'UMengUShare/Social/Sina', '~>6.4.8.2'
+pod 'ReactiveObjC', '~> 3.1.0'
+
 #pod 'Reveal-iOS-SDK', '~> 1.6.2'
 #pod 'Reveal-SDK', '6'
 #  pod 'SDWebImage', '~> 3.8'
+
   target 'UmengSharePlugInDemoTests' do
     inherit! :search_paths
     # Pods for testing
