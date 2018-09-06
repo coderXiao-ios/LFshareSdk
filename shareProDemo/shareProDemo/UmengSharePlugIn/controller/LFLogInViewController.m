@@ -11,34 +11,64 @@
 #import "LFShareAndLogInManager.h"
 #import "LFShareLoadingView.h"
 
-@interface LFLogInViewController ()<LFShareAndLogInManagerDelegate>
+@interface LFLogInViewController ()<LFShareAndLogInManagerDelegate,UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *logoImgY;
 @property (weak, nonatomic) IBOutlet UILabel *verifyCodeLb;
 @property (weak, nonatomic) IBOutlet UITextField *phoneTextFiled;
 @property (weak, nonatomic) IBOutlet UITextField *pswTextFiled;
 @property(nonatomic, strong)LFShareLoadingView *loadingView;
-
 @end
 
 @implementation LFLogInViewController
-
+- (instancetype)init{
+    if (self = [super init]) {
+//        NSString *path= [[NSBundle mainBundle] pathForResource:@"Settings" ofType:@"bundle"];
+//        LFLogInViewController *vc = [[LFLogInViewController alloc] initWithNibName:NSStringFromClass([LFLogInViewController class]) bundle:[NSBundle bundleWithPath:path]];
+        NSBundle *bundle = [NSBundle bundleWithPath:[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Settings.bundle"]];
+        
+        self = [[bundle loadNibNamed:NSStringFromClass([LFLogInViewController class]) owner:self options:nil] lastObject];
+    }
+    return self;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     if (iPhoneX()) {
-        _logoImgY.constant = _logoImgY.constant +IPhoneXSafeAreaPotraitTop;
     }else{
-        _logoImgY.constant = AspectScale(_logoImgY.constant);
     }
- 
+    
+    _phoneTextFiled.delegate = self;
+    _pswTextFiled.delegate = self;
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(sendVerifyCodeAction)];
+    [_verifyCodeLb addGestureRecognizer:tap];
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self.view endEditing:YES];
+}
+
+- (void) sendVerifyCodeAction{
+    if (_phoneTextFiled.text.length != 11 || [_phoneTextFiled.text hasPrefix:@"1"] == NO){
+        NSLog(@"请您输入正确的手机号");
+        return;
+    }
+    if ([_verifyCodeLb.text isEqualToString:@"获取验证码"] == NO)return;
+
+    NSLog(@"√ 动态码已发送您的手机，请注意查收");
+}
 
 - (IBAction)clearBtnAction:(UIButton *)sender {
+    _phoneTextFiled.text = @"";
 }
 
 
 - (IBAction)logInBtnAciton:(UIButton *)sender {
+    if (_phoneTextFiled.text.length != 11 || [_phoneTextFiled.text hasPrefix:@"1"] == NO){
+        NSLog(@"请您输入正确的手机号");
+        return;
+    }
+   
 }
 
 
@@ -77,4 +107,5 @@
         [self->_loadingView removeFromSuperview];
     });
 }
+
 @end

@@ -8,8 +8,16 @@
 
 #import "LFShareAndLogInManager.h"
 #import "LFShareConst.h"
-#import "LFShareLoadingView.h"
+#import "LFQQApiPlugIn.h"
+#import "LFWBApiPlugIn.h"
+#import "LFWXApiPlugIn.h"
 @interface LFShareAndLogInManager()<LFQQApiPlugInDelegate,LFWXApiPlugInDelegate,LFWBApiPlugInDelegate>
+//qq的管理类
+@property(strong,nonatomic)LFQQApiPlugIn * qqPlugIn;
+//微信的管理类
+@property(strong,nonatomic)LFWXApiPlugIn * wxPlugIn;
+//微博的管理类
+@property(strong,nonatomic)LFWBApiPlugIn * wbPlugIn;
 @end
 @implementation LFShareAndLogInManager
 /**
@@ -72,8 +80,8 @@
 //    [self.wbPlugIn WBOauthLogin];
 }
 
-- (void) shareToThirdPlatFormWithModel:(LFShareModel *)model{
-    switch (model.platform) {
+- (void) shareToThirdPlatformWithModel:(LFShareModel *)model{
+    switch (model.platformType) {
         case LFSharePlatFormQQ:
             
             break;
@@ -95,8 +103,8 @@
 }
 #pragma mark- 显示提示语
 -(void)showToastMessage:(NSString *)message{
-    if (self.delegate && [self.delegate respondsToSelector:@selector(ShareAndLogInToShowToastMessage:)]) {
-        [self.delegate ShareAndLogInToShowToastMessage:message];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(shareAndLogInToShowToastMessage:)]) {
+        [self.delegate shareAndLogInToShowToastMessage:message];
     }
 }
 -(void)loginSuccess:(NSDictionary *)responseObject{

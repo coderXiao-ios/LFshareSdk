@@ -24,6 +24,11 @@
 
 #define AspectScale(measure) ((measure) *(ScreenNarrowSide/375.f))
 
+#define LFBundle_Name @"LFSocialBundle.bundle"
+#define LFBundle_Path [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:LFBundle_Name]
+#define LFBundle [NSBundle bundleWithPath:LFBundle_Path]
+#define LFBundle_Image(imageName)  [UIImage imageNamed:imageName inBundle:LFBundle compatibleWithTraitCollection:nil]
+
 //微信
 static NSString *const LFWXAppkey = @"wx0956d7043849b19a";
 static NSString *const LFWXURLScheme = @"wx0956d7043849b19a";

@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001FF044213E4FB50089B263 /* NSString+TextFiledCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 001FF043213E4FB50089B263 /* NSString+TextFiledCheck.m */; };
+		001FF046213E9ABE0089B263 /* 109951163446367212.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 001FF045213E9ABE0089B263 /* 109951163446367212.jpeg */; };
+		001FF049213EA0730089B263 /* LFSharePopVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 001FF048213EA0730089B263 /* LFSharePopVC.m */; };
+		001FF04C213EC1180089B263 /* LFSelfUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 001FF04B213EC1180089B263 /* LFSelfUserManager.m */; };
+		001FF064213F83890089B263 /* LFBindPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001FF060213F83890089B263 /* LFBindPhoneViewController.m */; };
+		001FF065213F83890089B263 /* LFLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001FF061213F83890089B263 /* LFLogInViewController.m */; };
+		001FF066213F83890089B263 /* LFLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001FF063213F83890089B263 /* LFLogInViewController.xib */; };
+		001FF078213F89BD0089B263 /* LFModifyPhoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001FF077213F89BD0089B263 /* LFModifyPhoneViewController.m */; };
+		001FF07B213F99960089B263 /* LFInputVerifyCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 001FF07A213F99960089B263 /* LFInputVerifyCodeView.m */; };
+		001FF07D213F99A20089B263 /* LFInputVerifyCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001FF07C213F99A20089B263 /* LFInputVerifyCodeView.xib */; };
+		007A817221410B48002BDA76 /* LFSegmentBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A817121410B48002BDA76 /* LFSegmentBar.m */; };
+		007A819621414BD7002BDA76 /* HFFanCircleSegemntView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A819421414BD7002BDA76 /* HFFanCircleSegemntView.m */; };
+		007A819921414BED002BDA76 /* HFFanCircleTitileStyleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A819721414BED002BDA76 /* HFFanCircleTitileStyleTool.m */; };
+		007A819C21414D0C002BDA76 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A819B21414D0C002BDA76 /* UIView+Extension.m */; };
+		00BE7729213FB6C000571EFE /* LFSocialBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00BE7728213FB6C000571EFE /* LFSocialBundle.bundle */; };
 		00CF5BCC213B90C50052C99F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF5BCB213B90C50052C99F /* AppDelegate.m */; };
 		00CF5BCF213B90C50052C99F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF5BCE213B90C50052C99F /* ViewController.m */; };
 		00CF5BD2213B90C50052C99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF5BD0213B90C50052C99F /* Main.storyboard */; };
@@ -32,15 +47,14 @@
 		00DF13B0213C093600144F34 /* LFQQApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF1395213C093600144F34 /* LFQQApiPlugIn.m */; };
 		00DF13B1213C093600144F34 /* LFShareAndLogInManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF1396213C093600144F34 /* LFShareAndLogInManager.m */; };
 		00DF13B2213C093600144F34 /* LFWBApiPlugIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF1397213C093600144F34 /* LFWBApiPlugIn.m */; };
-		00DF13B3213C093600144F34 /* LFLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF139B213C093600144F34 /* LFLogInViewController.m */; };
-		00DF13B4213C093600144F34 /* LFLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DF139C213C093600144F34 /* LFLogInViewController.xib */; };
 		00DF13B5213C093600144F34 /* LFShareModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF139F213C093600144F34 /* LFShareModel.m */; };
 		00DF13B6213C093600144F34 /* LFSharePopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF13A1213C093600144F34 /* LFSharePopView.m */; };
 		00DF13B7213C093600144F34 /* UIImage+Tailoring.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF13A5213C093600144F34 /* UIImage+Tailoring.m */; };
 		00DF13B8213C093600144F34 /* UIButton+ImageTitleSpacing.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF13A6213C093600144F34 /* UIButton+ImageTitleSpacing.m */; };
 		00DF13BB213C0BFA00144F34 /* LFShareHuDView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF13BA213C0BFA00144F34 /* LFShareHuDView.m */; };
 		00DF13BE213C0C2400144F34 /* LFShareLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DF13BD213C0C2400144F34 /* LFShareLoadingView.m */; };
-		00DF13C0213C0C5E00144F34 /* LFShareLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00DF13BF213C0C5E00144F34 /* LFShareLoadingView.xib */; };
+		00F6E984213E2FA60031A24F /* LFLogInInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6E983213E2FA60031A24F /* LFLogInInputView.m */; };
+		00F6E987213E2FBF0031A24F /* LFThirdPlatFormView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F6E986213E2FBF0031A24F /* LFThirdPlatFormView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +75,32 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		001FF042213E4FB50089B263 /* NSString+TextFiledCheck.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+TextFiledCheck.h"; sourceTree = "<group>"; };
+		001FF043213E4FB50089B263 /* NSString+TextFiledCheck.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextFiledCheck.m"; sourceTree = "<group>"; };
+		001FF045213E9ABE0089B263 /* 109951163446367212.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 109951163446367212.jpeg; sourceTree = "<group>"; };
+		001FF047213EA0730089B263 /* LFSharePopVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSharePopVC.h; sourceTree = "<group>"; };
+		001FF048213EA0730089B263 /* LFSharePopVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSharePopVC.m; sourceTree = "<group>"; };
+		001FF04A213EC1180089B263 /* LFSelfUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSelfUserManager.h; sourceTree = "<group>"; };
+		001FF04B213EC1180089B263 /* LFSelfUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSelfUserManager.m; sourceTree = "<group>"; };
+		001FF05F213F83890089B263 /* LFBindPhoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFBindPhoneViewController.h; sourceTree = "<group>"; };
+		001FF060213F83890089B263 /* LFBindPhoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFBindPhoneViewController.m; sourceTree = "<group>"; };
+		001FF061213F83890089B263 /* LFLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLogInViewController.m; sourceTree = "<group>"; };
+		001FF062213F83890089B263 /* LFLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLogInViewController.h; sourceTree = "<group>"; };
+		001FF063213F83890089B263 /* LFLogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFLogInViewController.xib; sourceTree = "<group>"; };
+		001FF076213F89BD0089B263 /* LFModifyPhoneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFModifyPhoneViewController.h; sourceTree = "<group>"; };
+		001FF077213F89BD0089B263 /* LFModifyPhoneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFModifyPhoneViewController.m; sourceTree = "<group>"; };
+		001FF079213F99960089B263 /* LFInputVerifyCodeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFInputVerifyCodeView.h; sourceTree = "<group>"; };
+		001FF07A213F99960089B263 /* LFInputVerifyCodeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFInputVerifyCodeView.m; sourceTree = "<group>"; };
+		001FF07C213F99A20089B263 /* LFInputVerifyCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFInputVerifyCodeView.xib; sourceTree = "<group>"; };
+		007A817021410B48002BDA76 /* LFSegmentBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFSegmentBar.h; sourceTree = "<group>"; };
+		007A817121410B48002BDA76 /* LFSegmentBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFSegmentBar.m; sourceTree = "<group>"; };
+		007A819421414BD7002BDA76 /* HFFanCircleSegemntView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFanCircleSegemntView.m; sourceTree = "<group>"; };
+		007A819521414BD7002BDA76 /* HFFanCircleSegemntView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFanCircleSegemntView.h; sourceTree = "<group>"; };
+		007A819721414BED002BDA76 /* HFFanCircleTitileStyleTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFFanCircleTitileStyleTool.m; sourceTree = "<group>"; };
+		007A819821414BED002BDA76 /* HFFanCircleTitileStyleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFanCircleTitileStyleTool.h; sourceTree = "<group>"; };
+		007A819A21414D0C002BDA76 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		007A819B21414D0C002BDA76 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		00BE7728213FB6C000571EFE /* LFSocialBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LFSocialBundle.bundle; sourceTree = "<group>"; };
 		00CF5BC7213B90C50052C99F /* shareProDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shareProDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CF5BCA213B90C50052C99F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00CF5BCB213B90C50052C99F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -112,9 +152,6 @@
 		00DF1396213C093600144F34 /* LFShareAndLogInManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFShareAndLogInManager.m; sourceTree = "<group>"; };
 		00DF1397213C093600144F34 /* LFWBApiPlugIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFWBApiPlugIn.m; sourceTree = "<group>"; };
 		00DF1398213C093600144F34 /* LFWXApiPlugIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFWXApiPlugIn.h; sourceTree = "<group>"; };
-		00DF139A213C093600144F34 /* LFLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFLogInViewController.h; sourceTree = "<group>"; };
-		00DF139B213C093600144F34 /* LFLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFLogInViewController.m; sourceTree = "<group>"; };
-		00DF139C213C093600144F34 /* LFLogInViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LFLogInViewController.xib; sourceTree = "<group>"; };
 		00DF139E213C093600144F34 /* LFShareModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LFShareModel.h; sourceTree = "<group>"; };
 		00DF139F213C093600144F34 /* LFShareModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFShareModel.m; sourceTree = "<group>"; };
 		00DF13A1213C093600144F34 /* LFSharePopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LFSharePopView.m; sourceTree = "<group>"; };
@@ -127,7 +164,10 @@
 		00DF13BA213C0BFA00144F34 /* LFShareHuDView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareHuDView.m; sourceTree = "<group>"; };
 		00DF13BC213C0C2400144F34 /* LFShareLoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFShareLoadingView.h; sourceTree = "<group>"; };
 		00DF13BD213C0C2400144F34 /* LFShareLoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFShareLoadingView.m; sourceTree = "<group>"; };
-		00DF13BF213C0C5E00144F34 /* LFShareLoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFShareLoadingView.xib; sourceTree = "<group>"; };
+		00F6E982213E2FA60031A24F /* LFLogInInputView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFLogInInputView.h; sourceTree = "<group>"; };
+		00F6E983213E2FA60031A24F /* LFLogInInputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFLogInInputView.m; sourceTree = "<group>"; };
+		00F6E985213E2FBF0031A24F /* LFThirdPlatFormView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFThirdPlatFormView.h; sourceTree = "<group>"; };
+		00F6E986213E2FBF0031A24F /* LFThirdPlatFormView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFThirdPlatFormView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +204,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		001FF05E213F83890089B263 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				001FF05F213F83890089B263 /* LFBindPhoneViewController.h */,
+				001FF060213F83890089B263 /* LFBindPhoneViewController.m */,
+				001FF062213F83890089B263 /* LFLogInViewController.h */,
+				001FF061213F83890089B263 /* LFLogInViewController.m */,
+				001FF063213F83890089B263 /* LFLogInViewController.xib */,
+				001FF076213F89BD0089B263 /* LFModifyPhoneViewController.h */,
+				001FF077213F89BD0089B263 /* LFModifyPhoneViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		001FF075213F88CE0089B263 /* mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = mine;
+			sourceTree = "<group>";
+		};
+		007A817321410B4E002BDA76 /* segmentBarDemo */ = {
+			isa = PBXGroup;
+			children = (
+				007A817021410B48002BDA76 /* LFSegmentBar.h */,
+				007A817121410B48002BDA76 /* LFSegmentBar.m */,
+				007A819821414BED002BDA76 /* HFFanCircleTitileStyleTool.h */,
+				007A819721414BED002BDA76 /* HFFanCircleTitileStyleTool.m */,
+				007A819521414BD7002BDA76 /* HFFanCircleSegemntView.h */,
+				007A819421414BD7002BDA76 /* HFFanCircleSegemntView.m */,
+				007A819A21414D0C002BDA76 /* UIView+Extension.h */,
+				007A819B21414D0C002BDA76 /* UIView+Extension.m */,
+			);
+			path = segmentBarDemo;
+			sourceTree = "<group>";
+		};
 		00CF5BBE213B90C50052C99F = {
 			isa = PBXGroup;
 			children = (
+				007A817321410B4E002BDA76 /* segmentBarDemo */,
+				001FF045213E9ABE0089B263 /* 109951163446367212.jpeg */,
+				00BE7728213FB6C000571EFE /* LFSocialBundle.bundle */,
 				00DF1375213C093600144F34 /* SocialLibraries */,
 				00DF138E213C093600144F34 /* UmengSharePlugIn */,
 				00CF5BC9213B90C50052C99F /* shareProDemo */,
@@ -190,10 +269,13 @@
 		00CF5BC9213B90C50052C99F /* shareProDemo */ = {
 			isa = PBXGroup;
 			children = (
+				001FF075213F88CE0089B263 /* mine */,
 				00CF5BCA213B90C50052C99F /* AppDelegate.h */,
 				00CF5BCB213B90C50052C99F /* AppDelegate.m */,
 				00CF5BCD213B90C50052C99F /* ViewController.h */,
 				00CF5BCE213B90C50052C99F /* ViewController.m */,
+				001FF04A213EC1180089B263 /* LFSelfUserManager.h */,
+				001FF04B213EC1180089B263 /* LFSelfUserManager.m */,
 				00CF5BD0213B90C50052C99F /* Main.storyboard */,
 				00CF5BD3213B90C80052C99F /* Assets.xcassets */,
 				00CF5BD5213B90C80052C99F /* LaunchScreen.storyboard */,
@@ -298,8 +380,8 @@
 			isa = PBXGroup;
 			children = (
 				00DF138F213C093600144F34 /* plugIn */,
-				00DF1399213C093600144F34 /* controller */,
 				00DF139D213C093600144F34 /* model */,
+				001FF05E213F83890089B263 /* controller */,
 				00DF13A0213C093600144F34 /* view */,
 				00DF13A3213C093600144F34 /* tool */,
 			);
@@ -323,16 +405,6 @@
 			path = plugIn;
 			sourceTree = "<group>";
 		};
-		00DF1399213C093600144F34 /* controller */ = {
-			isa = PBXGroup;
-			children = (
-				00DF139A213C093600144F34 /* LFLogInViewController.h */,
-				00DF139B213C093600144F34 /* LFLogInViewController.m */,
-				00DF139C213C093600144F34 /* LFLogInViewController.xib */,
-			);
-			path = controller;
-			sourceTree = "<group>";
-		};
 		00DF139D213C093600144F34 /* model */ = {
 			isa = PBXGroup;
 			children = (
@@ -345,13 +417,21 @@
 		00DF13A0213C093600144F34 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				00DF13A1213C093600144F34 /* LFSharePopView.m */,
 				00DF13A2213C093600144F34 /* LFSharePopView.h */,
+				00DF13A1213C093600144F34 /* LFSharePopView.m */,
 				00DF13B9213C0BFA00144F34 /* LFShareHuDView.h */,
 				00DF13BA213C0BFA00144F34 /* LFShareHuDView.m */,
 				00DF13BC213C0C2400144F34 /* LFShareLoadingView.h */,
 				00DF13BD213C0C2400144F34 /* LFShareLoadingView.m */,
-				00DF13BF213C0C5E00144F34 /* LFShareLoadingView.xib */,
+				00F6E982213E2FA60031A24F /* LFLogInInputView.h */,
+				00F6E983213E2FA60031A24F /* LFLogInInputView.m */,
+				00F6E985213E2FBF0031A24F /* LFThirdPlatFormView.h */,
+				00F6E986213E2FBF0031A24F /* LFThirdPlatFormView.m */,
+				001FF047213EA0730089B263 /* LFSharePopVC.h */,
+				001FF048213EA0730089B263 /* LFSharePopVC.m */,
+				001FF079213F99960089B263 /* LFInputVerifyCodeView.h */,
+				001FF07A213F99960089B263 /* LFInputVerifyCodeView.m */,
+				001FF07C213F99A20089B263 /* LFInputVerifyCodeView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -359,10 +439,12 @@
 		00DF13A3213C093600144F34 /* tool */ = {
 			isa = PBXGroup;
 			children = (
+				00DF13A7213C093600144F34 /* UIImage+Tailoring.h */,
 				00DF13A4213C093600144F34 /* UIButton+ImageTitleSpacing.h */,
 				00DF13A5213C093600144F34 /* UIImage+Tailoring.m */,
 				00DF13A6213C093600144F34 /* UIButton+ImageTitleSpacing.m */,
-				00DF13A7213C093600144F34 /* UIImage+Tailoring.h */,
+				001FF042213E4FB50089B263 /* NSString+TextFiledCheck.h */,
+				001FF043213E4FB50089B263 /* NSString+TextFiledCheck.m */,
 			);
 			path = tool;
 			sourceTree = "<group>";
@@ -473,12 +555,14 @@
 				00DF13AB213C093600144F34 /* README.md in Resources */,
 				00CF5BD7213B90C80052C99F /* LaunchScreen.storyboard in Resources */,
 				00CF5BD4213B90C80052C99F /* Assets.xcassets in Resources */,
+				001FF066213F83890089B263 /* LFLogInViewController.xib in Resources */,
 				00DF13A9213C093600144F34 /* WeiboSDK.bundle in Resources */,
-				00DF13B4213C093600144F34 /* LFLogInViewController.xib in Resources */,
 				00DF13AD213C093600144F34 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				001FF046213E9ABE0089B263 /* 109951163446367212.jpeg in Resources */,
 				00DF13A8213C093600144F34 /* LICENSE in Resources */,
-				00DF13C0213C0C5E00144F34 /* LFShareLoadingView.xib in Resources */,
+				001FF07D213F99A20089B263 /* LFInputVerifyCodeView.xib in Resources */,
 				00CF5BD2213B90C50052C99F /* Main.storyboard in Resources */,
+				00BE7729213FB6C000571EFE /* LFSocialBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,17 +589,29 @@
 			files = (
 				00DF13AF213C093600144F34 /* LFWXApiPlugIn.m in Sources */,
 				00DF13B1213C093600144F34 /* LFShareAndLogInManager.m in Sources */,
+				007A819C21414D0C002BDA76 /* UIView+Extension.m in Sources */,
 				00DF13BB213C0BFA00144F34 /* LFShareHuDView.m in Sources */,
 				00DF13B8213C093600144F34 /* UIButton+ImageTitleSpacing.m in Sources */,
 				00CF5BCF213B90C50052C99F /* ViewController.m in Sources */,
+				001FF078213F89BD0089B263 /* LFModifyPhoneViewController.m in Sources */,
 				00CF5BDA213B90C80052C99F /* main.m in Sources */,
 				00DF13B7213C093600144F34 /* UIImage+Tailoring.m in Sources */,
 				00DF13B6213C093600144F34 /* LFSharePopView.m in Sources */,
-				00DF13B3213C093600144F34 /* LFLogInViewController.m in Sources */,
+				001FF04C213EC1180089B263 /* LFSelfUserManager.m in Sources */,
+				00F6E984213E2FA60031A24F /* LFLogInInputView.m in Sources */,
 				00DF13B0213C093600144F34 /* LFQQApiPlugIn.m in Sources */,
 				00DF13B5213C093600144F34 /* LFShareModel.m in Sources */,
+				001FF064213F83890089B263 /* LFBindPhoneViewController.m in Sources */,
+				007A819921414BED002BDA76 /* HFFanCircleTitileStyleTool.m in Sources */,
+				007A817221410B48002BDA76 /* LFSegmentBar.m in Sources */,
+				001FF049213EA0730089B263 /* LFSharePopVC.m in Sources */,
+				001FF065213F83890089B263 /* LFLogInViewController.m in Sources */,
+				001FF044213E4FB50089B263 /* NSString+TextFiledCheck.m in Sources */,
 				00DF13BE213C0C2400144F34 /* LFShareLoadingView.m in Sources */,
+				00F6E987213E2FBF0031A24F /* LFThirdPlatFormView.m in Sources */,
+				001FF07B213F99960089B263 /* LFInputVerifyCodeView.m in Sources */,
 				00DF13B2213C093600144F34 /* LFWBApiPlugIn.m in Sources */,
+				007A819621414BD7002BDA76 /* HFFanCircleSegemntView.m in Sources */,
 				00CF5BCC213B90C50052C99F /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -699,6 +795,7 @@
 					"$(PROJECT_DIR)/shareProDemo/SocialLibraries/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK",
 				);
 				INFOPLIST_FILE = shareProDemo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -733,6 +830,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xx.gfzj.openshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -753,6 +851,7 @@
 					"$(PROJECT_DIR)/shareProDemo/SocialLibraries/UMengUShare/UShareSDK/SocialLibraries/QQ/QQSDK",
 				);
 				INFOPLIST_FILE = shareProDemo/Info.plist;
+				INSTALL_PATH = "$(LOCAL_APPS_DIR)";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -787,6 +886,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = xx.gfzj.openshare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
