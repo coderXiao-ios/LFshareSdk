@@ -25,7 +25,7 @@
 			<string>QQ</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>tencent1105743458</string>
+				<string>tencent101502108</string>
 			</array>
 		</dict>
 		<dict>
@@ -35,7 +35,7 @@
 			<string>weixin</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wx0956d7043849b19a</string>
+				<string>wx5e38f4da3778a92e</string>
 			</array>
 		</dict>
 		<dict>
@@ -45,7 +45,7 @@
 			<string>weibo</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>wb2601129562</string>
+				<string>wb2454100575</string>
 			</array>
 		</dict>
 		<dict>
@@ -54,15 +54,13 @@
 			<key>CFBundleURLName</key>
 			<string></string>
 			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>tencent1105737761</string>
-			</array>
+			<array/>
 		</dict>
 		<dict>
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>hefanlive.com</string>
+			<string>lea</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>hefanlive</string>

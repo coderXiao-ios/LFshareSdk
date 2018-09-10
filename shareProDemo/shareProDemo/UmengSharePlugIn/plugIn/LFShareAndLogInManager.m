@@ -112,7 +112,7 @@
         [self.delegate thirdPlatformDidLoginSuccess:responseObject];
     }
 }
-#pragma mark- QQApiUtilsDelegate  QQ代理
+#pragma mark- QQApiPlugInDelegate  QQ代理
 /**
  * 登录成功后的回调
  */
@@ -127,7 +127,7 @@
  * 登录失败后的回调
  * \param cancelled 代表用户是否主动退出登录
  */
-- (void)QQApiUtilsTencentDidNotLogin:(BOOL)cancelled{
+- (void)QQApiPlugInTencentDidNotLogin:(BOOL)cancelled{
     if(cancelled){
         [self showToastMessage:LFQQToastLoginCancelled];
     }else{
@@ -137,13 +137,13 @@
 /**
  * 登录时网络有问题的回调
  */
-- (void)QQApiUtilsTencentDidNotNetWork{
+- (void)QQApiPlugInTencentDidNotNetWork{
     [self showToastMessage:LFQQToastNetworkError];
 }
 /**
  * 登录成功获取用户个人信息回调
  */
-- (void)QQApiUtilsGetUserInfoResponse:(APIResponse*) response tencentOAuth:(TencentOAuth *)tencentOAut{
+- (void)QQApiPlugInGetUserInfoResponse:(APIResponse*) response tencentOAuth:(TencentOAuth *)tencentOAut{
     //获取到QQ的用户信息
     NSLog(@"===%@",response.jsonResponse);
     NSInteger gender = 0;
@@ -160,7 +160,7 @@
     [self loginSuccess:params];
 }
 
-- (void)QQApiUtilsDidRecvSendMessageResponse:(SendMessageToQQResp *)response{
+- (void)QQApiPlugInDidRecvSendMessageResponse:(SendMessageToQQResp *)response{
     switch (response.type)
     {
         case ESENDMESSAGETOQQRESPTYPE:
@@ -183,9 +183,9 @@
         }
     }
 }
-#pragma mark- WXApiUtilsDelegate  微信代理
+#pragma mark- WXApiPlugInDelegate  微信代理
 //第三方程序向微信终端发送SendMessageToWXReq后，微信发送回来的处理结果，该结果用SendMessageToWXResp表示。
-- (void)WXApiUtilsDidRecvMessageResponse:(SendMessageToWXResp *)response{
+- (void)WXApiPlugInDidRecvMessageResponse:(SendMessageToWXResp *)response{
     switch (response.errCode)
     {
         case WXErrCodeUserCancel:
@@ -202,7 +202,7 @@
     }
 }
 //微信处理完第三方程序的认证和权限申请后向第三方程序回送的处理结果响应
-- (void)WXApiUtilsDidRecvAuthResponse:(SendAuthResp *)response{
+- (void)WXApiPlugInDidRecvAuthResponse:(SendAuthResp *)response{
     //获取accessToken
     SendAuthResp *oauthResp = (SendAuthResp *)response;
     if (oauthResp.errCode == WXErrCodeAuthDeny)
@@ -216,7 +216,7 @@
     else if (oauthResp.errCode == WXSuccess)
     {
         //TODO:获取到微信code 请求后台接口授权
-        [self loginSuccess:nil];
+        [self loginSuccess:@{@"code":oauthResp.code?oauthResp.code:@"",@"redirectUri":LFShareRedirectURL}];
         [self showToastMessage:LFWXToastLoginSuccessed];
     }
 }
@@ -243,8 +243,8 @@
         });
     });
 }
-#pragma mark- WBApiUtilsDelegate  微博代理
-- (void)WBApiUtilsDidRecvSendMessageResponse:(WBSendMessageToWeiboResponse *)response{
+#pragma mark- WBApiPlugInDelegate  微博代理
+- (void)WBApiPlugInDidRecvSendMessageResponse:(WBSendMessageToWeiboResponse *)response{
     //分享状态获取
     switch (response.statusCode)
     {
@@ -261,10 +261,11 @@
             break;
     }
 }
-- (void)WBApiUtilsDidRecvAuthorizeResponse:(WBAuthorizeResponse *)response{
+- (void)WBApiPlugInDidRecvAuthorizeResponse:(WBAuthorizeResponse *)response{
     if ((int)response.statusCode == 0) {
         WBAuthorizeResponse *authorize = (WBAuthorizeResponse *)response;
         [self showToastMessage:LFWBToastLoginSuccessed];
+        [self loginSuccess:@{@"uid":authorize.userInfo[@"uid"]?authorize.userInfo[@"uid"]:@"",@"accessToken":authorize.accessToken?authorize.accessToken:@""}];
         //获取微博的用户信息
         [self getWeiBoUserInfo:authorize];
     }else if ((int)response.statusCode == -1){

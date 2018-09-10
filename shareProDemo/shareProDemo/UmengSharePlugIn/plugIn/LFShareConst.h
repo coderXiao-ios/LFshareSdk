@@ -30,19 +30,22 @@
 #define LFBundle_Image(imageName)  [UIImage imageNamed:imageName inBundle:LFBundle compatibleWithTraitCollection:nil]
 
 //微信
-static NSString *const LFWXAppkey = @"wx0956d7043849b19a";
-static NSString *const LFWXURLScheme = @"wx0956d7043849b19a";
+static NSString *const LFWXAppkey =@"wx5e38f4da3778a92e";
+//@"wx0956d7043849b19a";
+static NSString *const LFWXURLScheme =@"wx5e38f4da3778a92e";
+//@"wx0956d7043849b19a";
 
 //QQ
-static NSString *const LFQQAppkey = @"1105737761";
-static NSString *const LFTencentURLScheme = @"tencent1105737761";
-
+static NSString *const LFQQAppkey =@"101502108";
+//@"1105737761";
+static NSString *const LFTencentURLScheme = @"tencent101502108";
+//@"tencent1105737761";
 //微博
-static NSString *const LFSinaAppkey = @"2601129562";
-static NSString *const LFSinaURLScheme = @"wb2601129562";
+static NSString *const LFSinaAppkey =@"2454100575";
+//@"3414149820";
+static NSString *const LFSinaURLScheme = @"wb2454100575";
 
-static NSString *const LFShareRedirectURL = @"http://www.hefantv.com";
-
+static NSString *const LFShareRedirectURL =@"http://www.bizrun.cn";
 
 //----------------------------提示语相关-------------------
 //QQ

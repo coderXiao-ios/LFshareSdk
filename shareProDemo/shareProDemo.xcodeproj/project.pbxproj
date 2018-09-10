@@ -21,7 +21,17 @@
 		007A819621414BD7002BDA76 /* HFFanCircleSegemntView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A819421414BD7002BDA76 /* HFFanCircleSegemntView.m */; };
 		007A819921414BED002BDA76 /* HFFanCircleTitileStyleTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A819721414BED002BDA76 /* HFFanCircleTitileStyleTool.m */; };
 		007A819C21414D0C002BDA76 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A819B21414D0C002BDA76 /* UIView+Extension.m */; };
-		00BE7729213FB6C000571EFE /* LFSocialBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 00BE7728213FB6C000571EFE /* LFSocialBundle.bundle */; };
+		007A819F21421B1E002BDA76 /* LFCooperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A819E21421B1E002BDA76 /* LFCooperationViewController.m */; };
+		007A81D221422284002BDA76 /* TYTabPagerBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81C321422284002BDA76 /* TYTabPagerBar.m */; };
+		007A81D321422284002BDA76 /* TYTabPagerBarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81C521422284002BDA76 /* TYTabPagerBarCell.m */; };
+		007A81D421422284002BDA76 /* TYTabPagerBarLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81C721422284002BDA76 /* TYTabPagerBarLayout.m */; };
+		007A81D521422284002BDA76 /* TYTabPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81C921422284002BDA76 /* TYTabPagerController.m */; };
+		007A81D621422284002BDA76 /* TYTabPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81CB21422284002BDA76 /* TYTabPagerView.m */; };
+		007A81D721422284002BDA76 /* TYPagerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81CD21422284002BDA76 /* TYPagerController.m */; };
+		007A81D821422284002BDA76 /* TYPagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81CF21422284002BDA76 /* TYPagerView.m */; };
+		007A81D921422284002BDA76 /* TYPagerViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 007A81D121422284002BDA76 /* TYPagerViewLayout.m */; };
+		007A81DE21422EF3002BDA76 /* LFShareLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007A81DD21422EF3002BDA76 /* LFShareLoadingView.xib */; };
+		007FCD6721462AE100BA123F /* LFSocialBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 007FCD6621462AE100BA123F /* LFSocialBundle.bundle */; };
 		00CF5BCC213B90C50052C99F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF5BCB213B90C50052C99F /* AppDelegate.m */; };
 		00CF5BCF213B90C50052C99F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CF5BCE213B90C50052C99F /* ViewController.m */; };
 		00CF5BD2213B90C50052C99F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF5BD0213B90C50052C99F /* Main.storyboard */; };
@@ -100,7 +110,26 @@
 		007A819821414BED002BDA76 /* HFFanCircleTitileStyleTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HFFanCircleTitileStyleTool.h; sourceTree = "<group>"; };
 		007A819A21414D0C002BDA76 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		007A819B21414D0C002BDA76 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		00BE7728213FB6C000571EFE /* LFSocialBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LFSocialBundle.bundle; sourceTree = "<group>"; };
+		007A819D21421B1E002BDA76 /* LFCooperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LFCooperationViewController.h; sourceTree = "<group>"; };
+		007A819E21421B1E002BDA76 /* LFCooperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LFCooperationViewController.m; sourceTree = "<group>"; };
+		007A81C221422284002BDA76 /* TYTabPagerBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerBar.h; sourceTree = "<group>"; };
+		007A81C321422284002BDA76 /* TYTabPagerBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerBar.m; sourceTree = "<group>"; };
+		007A81C421422284002BDA76 /* TYTabPagerBarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerBarCell.h; sourceTree = "<group>"; };
+		007A81C521422284002BDA76 /* TYTabPagerBarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerBarCell.m; sourceTree = "<group>"; };
+		007A81C621422284002BDA76 /* TYTabPagerBarLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerBarLayout.h; sourceTree = "<group>"; };
+		007A81C721422284002BDA76 /* TYTabPagerBarLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerBarLayout.m; sourceTree = "<group>"; };
+		007A81C821422284002BDA76 /* TYTabPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerController.h; sourceTree = "<group>"; };
+		007A81C921422284002BDA76 /* TYTabPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerController.m; sourceTree = "<group>"; };
+		007A81CA21422284002BDA76 /* TYTabPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTabPagerView.h; sourceTree = "<group>"; };
+		007A81CB21422284002BDA76 /* TYTabPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTabPagerView.m; sourceTree = "<group>"; };
+		007A81CC21422284002BDA76 /* TYPagerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerController.h; sourceTree = "<group>"; };
+		007A81CD21422284002BDA76 /* TYPagerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPagerController.m; sourceTree = "<group>"; };
+		007A81CE21422284002BDA76 /* TYPagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerView.h; sourceTree = "<group>"; };
+		007A81CF21422284002BDA76 /* TYPagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPagerView.m; sourceTree = "<group>"; };
+		007A81D021422284002BDA76 /* TYPagerViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYPagerViewLayout.h; sourceTree = "<group>"; };
+		007A81D121422284002BDA76 /* TYPagerViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYPagerViewLayout.m; sourceTree = "<group>"; };
+		007A81DD21422EF3002BDA76 /* LFShareLoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LFShareLoadingView.xib; sourceTree = "<group>"; };
+		007FCD6621462AE100BA123F /* LFSocialBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = LFSocialBundle.bundle; sourceTree = "<group>"; };
 		00CF5BC7213B90C50052C99F /* shareProDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shareProDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00CF5BCA213B90C50052C99F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		00CF5BCB213B90C50052C99F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -228,6 +257,7 @@
 		007A817321410B4E002BDA76 /* segmentBarDemo */ = {
 			isa = PBXGroup;
 			children = (
+				007A81C021422284002BDA76 /* TYPagerController */,
 				007A817021410B48002BDA76 /* LFSegmentBar.h */,
 				007A817121410B48002BDA76 /* LFSegmentBar.m */,
 				007A819821414BED002BDA76 /* HFFanCircleTitileStyleTool.h */,
@@ -236,8 +266,41 @@
 				007A819421414BD7002BDA76 /* HFFanCircleSegemntView.m */,
 				007A819A21414D0C002BDA76 /* UIView+Extension.h */,
 				007A819B21414D0C002BDA76 /* UIView+Extension.m */,
+				007A819D21421B1E002BDA76 /* LFCooperationViewController.h */,
+				007A819E21421B1E002BDA76 /* LFCooperationViewController.m */,
 			);
 			path = segmentBarDemo;
+			sourceTree = "<group>";
+		};
+		007A81C021422284002BDA76 /* TYPagerController */ = {
+			isa = PBXGroup;
+			children = (
+				007A81C121422284002BDA76 /* TabPager */,
+				007A81CC21422284002BDA76 /* TYPagerController.h */,
+				007A81CD21422284002BDA76 /* TYPagerController.m */,
+				007A81CE21422284002BDA76 /* TYPagerView.h */,
+				007A81CF21422284002BDA76 /* TYPagerView.m */,
+				007A81D021422284002BDA76 /* TYPagerViewLayout.h */,
+				007A81D121422284002BDA76 /* TYPagerViewLayout.m */,
+			);
+			path = TYPagerController;
+			sourceTree = "<group>";
+		};
+		007A81C121422284002BDA76 /* TabPager */ = {
+			isa = PBXGroup;
+			children = (
+				007A81C221422284002BDA76 /* TYTabPagerBar.h */,
+				007A81C321422284002BDA76 /* TYTabPagerBar.m */,
+				007A81C421422284002BDA76 /* TYTabPagerBarCell.h */,
+				007A81C521422284002BDA76 /* TYTabPagerBarCell.m */,
+				007A81C621422284002BDA76 /* TYTabPagerBarLayout.h */,
+				007A81C721422284002BDA76 /* TYTabPagerBarLayout.m */,
+				007A81C821422284002BDA76 /* TYTabPagerController.h */,
+				007A81C921422284002BDA76 /* TYTabPagerController.m */,
+				007A81CA21422284002BDA76 /* TYTabPagerView.h */,
+				007A81CB21422284002BDA76 /* TYTabPagerView.m */,
+			);
+			path = TabPager;
 			sourceTree = "<group>";
 		};
 		00CF5BBE213B90C50052C99F = {
@@ -245,7 +308,7 @@
 			children = (
 				007A817321410B4E002BDA76 /* segmentBarDemo */,
 				001FF045213E9ABE0089B263 /* 109951163446367212.jpeg */,
-				00BE7728213FB6C000571EFE /* LFSocialBundle.bundle */,
+				007FCD6621462AE100BA123F /* LFSocialBundle.bundle */,
 				00DF1375213C093600144F34 /* SocialLibraries */,
 				00DF138E213C093600144F34 /* UmengSharePlugIn */,
 				00CF5BC9213B90C50052C99F /* shareProDemo */,
@@ -423,6 +486,7 @@
 				00DF13BA213C0BFA00144F34 /* LFShareHuDView.m */,
 				00DF13BC213C0C2400144F34 /* LFShareLoadingView.h */,
 				00DF13BD213C0C2400144F34 /* LFShareLoadingView.m */,
+				007A81DD21422EF3002BDA76 /* LFShareLoadingView.xib */,
 				00F6E982213E2FA60031A24F /* LFLogInInputView.h */,
 				00F6E983213E2FA60031A24F /* LFLogInInputView.m */,
 				00F6E985213E2FBF0031A24F /* LFThirdPlatFormView.h */,
@@ -552,7 +616,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				007FCD6721462AE100BA123F /* LFSocialBundle.bundle in Resources */,
 				00DF13AB213C093600144F34 /* README.md in Resources */,
+				007A81DE21422EF3002BDA76 /* LFShareLoadingView.xib in Resources */,
 				00CF5BD7213B90C80052C99F /* LaunchScreen.storyboard in Resources */,
 				00CF5BD4213B90C80052C99F /* Assets.xcassets in Resources */,
 				001FF066213F83890089B263 /* LFLogInViewController.xib in Resources */,
@@ -562,7 +628,6 @@
 				00DF13A8213C093600144F34 /* LICENSE in Resources */,
 				001FF07D213F99A20089B263 /* LFInputVerifyCodeView.xib in Resources */,
 				00CF5BD2213B90C50052C99F /* Main.storyboard in Resources */,
-				00BE7729213FB6C000571EFE /* LFSocialBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,10 +654,15 @@
 			files = (
 				00DF13AF213C093600144F34 /* LFWXApiPlugIn.m in Sources */,
 				00DF13B1213C093600144F34 /* LFShareAndLogInManager.m in Sources */,
+				007A81D721422284002BDA76 /* TYPagerController.m in Sources */,
+				007A81D921422284002BDA76 /* TYPagerViewLayout.m in Sources */,
+				007A81D221422284002BDA76 /* TYTabPagerBar.m in Sources */,
+				007A81D321422284002BDA76 /* TYTabPagerBarCell.m in Sources */,
 				007A819C21414D0C002BDA76 /* UIView+Extension.m in Sources */,
 				00DF13BB213C0BFA00144F34 /* LFShareHuDView.m in Sources */,
 				00DF13B8213C093600144F34 /* UIButton+ImageTitleSpacing.m in Sources */,
 				00CF5BCF213B90C50052C99F /* ViewController.m in Sources */,
+				007A819F21421B1E002BDA76 /* LFCooperationViewController.m in Sources */,
 				001FF078213F89BD0089B263 /* LFModifyPhoneViewController.m in Sources */,
 				00CF5BDA213B90C80052C99F /* main.m in Sources */,
 				00DF13B7213C093600144F34 /* UIImage+Tailoring.m in Sources */,
@@ -600,13 +670,17 @@
 				001FF04C213EC1180089B263 /* LFSelfUserManager.m in Sources */,
 				00F6E984213E2FA60031A24F /* LFLogInInputView.m in Sources */,
 				00DF13B0213C093600144F34 /* LFQQApiPlugIn.m in Sources */,
+				007A81D821422284002BDA76 /* TYPagerView.m in Sources */,
+				007A81D421422284002BDA76 /* TYTabPagerBarLayout.m in Sources */,
 				00DF13B5213C093600144F34 /* LFShareModel.m in Sources */,
 				001FF064213F83890089B263 /* LFBindPhoneViewController.m in Sources */,
 				007A819921414BED002BDA76 /* HFFanCircleTitileStyleTool.m in Sources */,
 				007A817221410B48002BDA76 /* LFSegmentBar.m in Sources */,
+				007A81D521422284002BDA76 /* TYTabPagerController.m in Sources */,
 				001FF049213EA0730089B263 /* LFSharePopVC.m in Sources */,
 				001FF065213F83890089B263 /* LFLogInViewController.m in Sources */,
 				001FF044213E4FB50089B263 /* NSString+TextFiledCheck.m in Sources */,
+				007A81D621422284002BDA76 /* TYTabPagerView.m in Sources */,
 				00DF13BE213C0C2400144F34 /* LFShareLoadingView.m in Sources */,
 				00F6E987213E2FBF0031A24F /* LFThirdPlatFormView.m in Sources */,
 				001FF07B213F99960089B263 /* LFInputVerifyCodeView.m in Sources */,
@@ -784,7 +858,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G92V3TDEL2;
+				DEVELOPMENT_TEAM = FLN339CM8A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialLibraries/QQ/QQSDK",
@@ -828,7 +902,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xx.gfzj.openshare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starunion.hefanlive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -840,7 +914,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = G92V3TDEL2;
+				DEVELOPMENT_TEAM = FLN339CM8A;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/SocialLibraries/QQ/QQSDK",
@@ -884,7 +958,7 @@
 					"-ObjC",
 					"-all_load",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xx.gfzj.openshare;
+				PRODUCT_BUNDLE_IDENTIFIER = com.starunion.hefanlive;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
